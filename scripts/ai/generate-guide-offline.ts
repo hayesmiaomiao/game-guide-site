@@ -35,6 +35,15 @@ type ExistingGuide = {
 const projectRoot = process.cwd();
 const contentDirectory = path.join(projectRoot, "content");
 const guidesDirectory = path.join(contentDirectory, "guides");
+const categoryHeroImages: Record<string, string> = {
+  "build-guide": "/images/guides/build-guide.webp",
+  "beginner-guide": "/images/guides/beginner-guide.webp",
+  walkthrough: "/images/guides/walkthrough.webp",
+  "map-guide": "/images/guides/map-guide.webp",
+  "tier-list": "/images/guides/tier-list.webp",
+  "boss-guide": "/images/guides/boss-guide.webp",
+  "quest-guide": "/images/guides/quest-guide.webp"
+};
 
 function slugify(value: string) {
   return value
@@ -168,8 +177,9 @@ function buildDraft(
     .map((guide) => guide.slug)
     .slice(0, 3);
   const heroImage =
+    categoryHeroImages[category.slug] ||
     existingGuides.find((guide) => guide.game === game.slug && guide.heroImage)?.heroImage ||
-    "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=85";
+    "/images/guides/beginner-guide.webp";
   const tags = buildTags(options.keyword, category.slug);
 
   const relatedYaml = related.length
@@ -308,7 +318,7 @@ reviewer: "hayes"
 publishDate: ${yamlString(today)}
 updatedDate: ${yamlString(today)}
 heroImage: ${yamlString(heroImage)}
-heroAlt: ${yamlString(`${game.name} ${options.keyword} guide hero image`)}
+heroAlt: ${yamlString(`${game.name} ${category.name.toLowerCase()} hero image for ${options.keyword}`)}
 excerpt: ${yamlString(excerpt)}
 platform: ${yamlString(platform)}
 patch: ${yamlString(options.patch)}
