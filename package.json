@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
   "content:check": "node scripts/validate-guide.js",
   "fix:images": "node scripts/fix-guide-images.js",
+  "covers": "node scripts/cover-images.js",
   "publish": "node scripts/publish.js",
     "internal-links": "node scripts/internal-links.js",
     "toc": "node scripts/toc.js",
@@ -27,7 +28,8 @@
     "next-mdx-remote": "^6.0.0",
     "openai": "^6.45.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "sharp": "^0.35.2"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",

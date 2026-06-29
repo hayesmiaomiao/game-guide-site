@@ -5,6 +5,7 @@ const steps = [
   "toc",
   "internal-links",
   "faq",
+  "covers",
   "content:check",
   "build"
 ];
