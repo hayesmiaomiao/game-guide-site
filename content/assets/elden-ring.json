@@ -1,0 +1,51 @@
+{
+  "game": "Elden Ring",
+  "default": "/images/covers/elden-ring-default.webp",
+  "rules": [
+    {
+      "match": ["strength"],
+      "image": "/images/covers/elden-ring-strength.webp",
+      "alt": "Elden Ring strength build with colossal sword"
+    },
+    {
+      "match": ["dex", "dexterity"],
+      "image": "/images/covers/elden-ring-dex.webp",
+      "alt": "Elden Ring dexterity build with fast weapons"
+    },
+    {
+      "match": ["faith"],
+      "image": "/images/covers/elden-ring-faith.webp",
+      "alt": "Elden Ring faith build with holy incantations"
+    },
+    {
+      "match": ["intelligence", "magic", "mage"],
+      "image": "/images/covers/elden-ring-intelligence.webp",
+      "alt": "Elden Ring intelligence mage build"
+    },
+    {
+      "match": ["bleed", "blood"],
+      "image": "/images/covers/elden-ring-bleed.webp",
+      "alt": "Elden Ring bleed build with blood weapons"
+    },
+    {
+      "match": ["rune", "farming"],
+      "image": "/images/covers/elden-ring-rune-farming.webp",
+      "alt": "Elden Ring rune farming guide"
+    },
+    {
+      "match": ["boss", "order"],
+      "image": "/images/covers/elden-ring-boss-order.webp",
+      "alt": "Elden Ring boss order guide"
+    },
+    {
+      "match": ["weapon", "weapons"],
+      "image": "/images/covers/elden-ring-early-weapons.webp",
+      "alt": "Elden Ring early weapons guide"
+    },
+    {
+      "match": ["beginner"],
+      "image": "/images/covers/elden-ring-beginner.webp",
+      "alt": "Elden Ring beginner guide"
+    }
+  ]
+}
