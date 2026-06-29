@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "generate:guide": "tsx scripts/ai/generate-guide.ts",
+    "generate:guide:offline": "tsx scripts/ai/generate-guide-offline.ts",
     "ai:guide": "node scripts/ai-generate-guide.js",
     "validate:guides": "node scripts/validate-guide.js",
     "content:check": "npm run validate:guides"

@@ -1,5 +1,5 @@
-import "dotenv/config";
-import OpenAI from "openai";
+import fs from "node:fs/promises";
+import { generateCompletion } from "./services/openai";
 
 export type GuideCliOptions = {
   game: string;
@@ -40,22 +40,22 @@ function parseArguments(argv: string[]): GuideCliOptions {
   };
 }
 
-export function createOpenAIClient() {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
-    throw new Error("OPENAI_API_KEY is not configured.");
-  }
+async function loadGuidePrompt(options: GuideCliOptions): Promise<string> {
+  const templateUrl = new URL("./prompts/guide.md", import.meta.url);
+  const template = await fs.readFile(templateUrl, "utf8");
 
-  return new OpenAI({ apiKey });
+  return template
+    .replaceAll("{{game}}", options.game)
+    .replaceAll("{{keyword}}", options.keyword)
+    .replaceAll("{{category}}", options.category);
 }
 
-function main() {
+async function main() {
   try {
     const options = parseArguments(process.argv.slice(2));
-
-    console.log(`Game: ${options.game}`);
-    console.log(`Keyword: ${options.keyword}`);
-    console.log(`Category: ${options.category}`);
+    const prompt = await loadGuidePrompt(options);
+    const markdown = await generateCompletion(prompt);
+    console.log(markdown);
   } catch (error) {
     const message = error instanceof Error ? error.message : String(error);
     console.error(`Guide CLI failed: ${message}`);
@@ -63,4 +63,4 @@ function main() {
   }
 }
 
-main();
+void main();
