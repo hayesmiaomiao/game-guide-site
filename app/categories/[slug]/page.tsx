@@ -5,7 +5,9 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { getAllCategorySlugs, getGuidesByCategory } from "@/lib/content";
 import { absoluteUrl, guideCategories, slugify } from "@/lib/site";
 
-export function generateStaticParams() {
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
   return getAllCategorySlugs().map((slug) => ({ slug }));
 }
 

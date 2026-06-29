@@ -5,7 +5,9 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { getAllTagSlugs, getGuidesByTag } from "@/lib/content";
 import { absoluteUrl } from "@/lib/site";
 
-export function generateStaticParams() {
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
   return getAllTagSlugs().map((slug) => ({ slug }));
 }
 

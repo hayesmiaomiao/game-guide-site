@@ -10,7 +10,9 @@ import { getAllGuides, getGuide } from "@/lib/content";
 import { articleSchema, faqSchema, guideBreadcrumbs } from "@/lib/schema";
 import { absoluteUrl, slugify } from "@/lib/site";
 
-export function generateStaticParams() {
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
   return getAllGuides().map((guide) => ({ slug: guide.slug }));
 }
 
