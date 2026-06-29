@@ -9,6 +9,7 @@
   "lint": "next lint",
   "typecheck": "tsc --noEmit",
   "content:check": "node scripts/validate-guide.js",
+  "publish": "node scripts/publish.js",
   "internal-links": "node scripts/internal-links.js",
   "toc": "node scripts/toc.js",
   "faq": "node scripts/faq.js",
