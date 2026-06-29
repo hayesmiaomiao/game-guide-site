@@ -88,16 +88,23 @@ function relevanceScore(source, candidate) {
 
 function recommendGuides(source, guides) {
   return guides
-    .filter(
-      (candidate) =>
-        candidate.slug !== source.slug && candidate.game === source.game
-    )
+    .filter((candidate) => candidate.slug !== source.slug)
     .sort((left, right) => {
-      const leftCategoryRank = left.category === source.category ? 0 : 1;
-      const rightCategoryRank = right.category === source.category ? 0 : 1;
+      const leftRank =
+        left.game === source.game
+          ? 0
+          : left.category === source.category
+            ? 1
+            : 2;
+      const rightRank =
+        right.game === source.game
+          ? 0
+          : right.category === source.category
+            ? 1
+            : 2;
 
       return (
-        leftCategoryRank - rightCategoryRank ||
+        leftRank - rightRank ||
         relevanceScore(source, right) - relevanceScore(source, left) ||
         left.title.localeCompare(right.title)
       );
@@ -145,9 +152,9 @@ function main() {
       const recommendations = recommendGuides(guide, guides);
       if (updateGuide(guide, recommendations)) {
         updated += 1;
-        console.log(
-          `Updated ${path.relative(projectRoot, guide.filePath)} with ${recommendations.length} related guide(s).`
-        );
+        console.log("Updated:");
+        console.log(path.relative(projectRoot, guide.filePath).replace(/\\/g, "/"));
+        console.log("Added Related Guides");
       }
     }
 

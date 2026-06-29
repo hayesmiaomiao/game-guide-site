@@ -130,7 +130,9 @@ function main() {
       const filePath = path.join(guidesDirectory, file);
       if (updateGuide(filePath)) {
         updated += 1;
-        console.log(`Updated ${path.relative(projectRoot, filePath)}`);
+        console.log("Updated:");
+        console.log(path.relative(projectRoot, filePath).replace(/\\/g, "/"));
+        console.log("Added TOC");
       }
     }
 
