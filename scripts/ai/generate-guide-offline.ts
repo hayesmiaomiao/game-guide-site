@@ -1,4 +1,3 @@
-import { spawnSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import matter from "gray-matter";
@@ -9,7 +8,6 @@ type CliOptions = {
   category: string;
   difficulty: string;
   patch: string;
-  force: boolean;
 };
 
 type GameData = {
@@ -86,8 +84,7 @@ function parseArguments(argv: string[]): CliOptions {
     keyword: values.keyword,
     category: values.category,
     difficulty: values.difficulty || "Beginner",
-    patch: values.patch || "Latest editorial review",
-    force: values.force === "true"
+    patch: values.patch || "Latest editorial review"
   };
 }
 
@@ -342,27 +339,7 @@ ${body}`;
   return { slug, content };
 }
 
-function runNpmScript(script: string) {
-  const npmCommand = process.platform === "win32" ? "npm.cmd" : "npm";
-  console.log(`Running npm run ${script}...`);
-  const result = spawnSync(npmCommand, ["run", script], {
-    cwd: projectRoot,
-    stdio: "inherit",
-    shell: false
-  });
-
-  if (result.error) {
-    throw new Error(`Unable to run npm run ${script}: ${result.error.message}`);
-  }
-  if (result.status !== 0) {
-    throw new Error(`npm run ${script} failed with exit code ${result.status}.`);
-  }
-}
-
 function main() {
-  let outputPath: string | undefined;
-  let previousContent: string | undefined;
-
   try {
     const options = parseArguments(process.argv.slice(2));
     const games = readJsonFiles<Omit<GameData, "slug">>(path.join(contentDirectory, "games"));
@@ -374,33 +351,16 @@ function main() {
     const existingGuides = readExistingGuides();
     const draft = buildDraft(options, game, category, existingGuides);
 
-    outputPath = path.join(guidesDirectory, `${draft.slug}.mdx`);
+    const outputPath = path.join(guidesDirectory, `${draft.slug}.mdx`);
     if (fs.existsSync(outputPath)) {
-      if (!options.force) {
-        throw new Error(
-          `Guide already exists: ${path.relative(projectRoot, outputPath)}. Use --force true to replace it.`
-        );
-      }
-      previousContent = fs.readFileSync(outputPath, "utf8");
+      throw new Error(
+        `Guide already exists: ${path.relative(projectRoot, outputPath)}. Existing files are never overwritten.`
+      );
     }
 
     fs.mkdirSync(guidesDirectory, { recursive: true });
     fs.writeFileSync(outputPath, draft.content, "utf8");
     console.log(`Created ${path.relative(projectRoot, outputPath)}`);
-
-    try {
-      runNpmScript("content:check");
-      runNpmScript("build");
-    } catch (error) {
-      if (previousContent !== undefined) {
-        fs.writeFileSync(outputPath, previousContent, "utf8");
-      } else if (fs.existsSync(outputPath)) {
-        fs.unlinkSync(outputPath);
-      }
-      throw new Error(
-        `${error instanceof Error ? error.message : String(error)} Generated file was rolled back.`
-      );
-    }
   } catch (error) {
     console.error(
       `Offline guide generation failed: ${error instanceof Error ? error.message : String(error)}`

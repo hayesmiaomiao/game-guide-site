@@ -3,18 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "typecheck": "tsc --noEmit",
-    "generate:guide": "tsx scripts/ai/generate-guide.ts",
-    "generate:guide:offline": "tsx scripts/ai/generate-guide-offline.ts",
-    "ai:guide": "node scripts/ai-generate-guide.js",
-    "validate:guides": "node scripts/validate-guide.js",
-    "content:check": "npm run validate:guides"
-  },
-  "dependencies": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "typecheck": "tsc --noEmit",
+  "content:check": "node scripts/validate-guide.js",
+  "generate:guide": "tsx scripts/ai/generate-guide.ts",
+  "generate:guide:offline": "tsx scripts/ai/generate-guide-offline.ts",
+  "batch": "node scripts/batch-generate.js"
+},
+    "dependencies": {
     "@mdx-js/react": "^3.0.1",
     "dotenv": "^17.4.2",
     "gray-matter": "^4.0.3",

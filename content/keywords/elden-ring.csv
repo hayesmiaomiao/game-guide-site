@@ -1,11 +1,11 @@
-"keyword,category,difficulty,status,priority"
-"best strength build,build-guide,beginner,todo,1"
-"best dex build,build-guide,beginner,todo,1"
-"best faith build,build-guide,beginner,todo,1"
-"best intelligence build,build-guide,intermediate,todo,2"
-"best bleed build,build-guide,beginner,todo,1"
-"best rune farming,map-guide,beginner,todo,1"
-"best early weapons,build-guide,beginner,todo,1"
-"best beginner guide,beginner-guide,beginner,todo,1"
-"best boss order,walkthrough,beginner,todo,1"
-"best leveling guide,beginner-guide,beginner,todo,1"
+keyword,category,difficulty,status,priority
+best strength build,build-guide,beginner,generated,1
+best dex build,build-guide,beginner,generated,1
+best faith build,build-guide,beginner,generated,1
+best intelligence build,build-guide,intermediate,generated,2
+best bleed build,build-guide,beginner,generated,1
+best rune farming,map-guide,beginner,generated,1
+best early weapons,build-guide,beginner,generated,1
+best beginner guide,beginner-guide,beginner,generated,1
+best boss order,walkthrough,beginner,generated,1
+best leveling guide,beginner-guide,beginner,generated,1
