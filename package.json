@@ -10,6 +10,7 @@
   "typecheck": "tsc --noEmit",
   "content:check": "node scripts/validate-guide.js",
   "internal-links": "node scripts/internal-links.js",
+  "toc": "node scripts/toc.js",
   "generate:guide": "tsx scripts/ai/generate-guide.ts",
   "generate:guide:offline": "tsx scripts/ai/generate-guide-offline.ts",
   "batch": "node scripts/batch-generate.js"
