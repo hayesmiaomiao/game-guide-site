@@ -24,7 +24,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
   const guides = getGuidesByCategory(params.slug);
   const knownCategory = guideCategories.find((category) => slugify(category) === params.slug);
   if (!guides.length && !knownCategory) notFound();
-  const title = guides[0]?.category || knownCategory || params.slug.replace(/-/g, " ");
+  const title = guides[0]?.categoryName || knownCategory || params.slug.replace(/-/g, " ");
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">

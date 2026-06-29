@@ -1,0 +1,11 @@
+{
+  "name": "Hayes",
+  "role": "Senior Game Guide Editor",
+  "bio": "Hayes writes practical game guides focused on clean routes, build decisions, map reading, and beginner-friendly progression.",
+  "avatar": "/avatars/hayes.svg",
+  "expertise": ["RPG routes", "Build guides", "Map exploration", "Beginner onboarding", "Patch review"],
+  "socialLinks": {
+    "website": "https://example.com",
+    "x": "https://x.com/example"
+  }
+}

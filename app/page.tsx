@@ -1,7 +1,5 @@
 import Link from "next/link";
 import {
-  ArrowRight,
-  BookOpen,
   Crown,
   Gamepad2,
   ListChecks,
@@ -12,6 +10,12 @@ import {
   Swords
 } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
+import { GameCard } from "@/components/GameCard";
+import { GuideCard } from "@/components/GuideCard";
+import { Sidebar } from "@/components/Sidebar";
+import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
+import { Section } from "@/components/ui/Section";
 import { getAllGames, getAllGuides } from "@/lib/content";
 import { guideCategories, slugify } from "@/lib/site";
 
@@ -78,24 +82,17 @@ export default function HomePage() {
             Fast, practical guides for players who want better routes, stronger builds, and fewer wasted hours.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/guides"
-              className="inline-flex items-center gap-2 rounded-lg bg-mana px-5 py-3 text-sm font-bold text-slate-950 hover:bg-white"
-            >
+            <Button href="/guides" size="lg">
               Browse Guides
-              <ArrowRight size={16} aria-hidden />
-            </Link>
-            <Link
-              href="/games"
-              className="inline-flex items-center gap-2 rounded-lg border border-line px-5 py-3 text-sm font-bold text-white hover:border-mana"
-            >
+            </Button>
+            <Button href="/games" variant="secondary" size="lg">
               View Games
               <Gamepad2 size={16} aria-hidden />
-            </Link>
+            </Button>
           </div>
         </div>
         <div className="grid content-center gap-4">
-          <div className="rounded-lg border border-line bg-panel p-5 shadow-glow">
+          <Card className="p-5 shadow-glow">
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm font-bold text-ember">Latest Meta Snapshot</p>
@@ -110,12 +107,12 @@ export default function HomePage() {
               <div className="rounded-lg border border-line bg-white/[0.03] p-3">Build notes focused on practical performance.</div>
               <div className="rounded-lg border border-line bg-white/[0.03] p-3">Map and quest pages structured for quick scanning.</div>
             </div>
-          </div>
+          </Card>
           <AdSlot label="Homepage Top Ad" />
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <Section className="py-6">
         <Link
           href="/guides#search"
           aria-label="Search boss guides, builds, quests, maps"
@@ -124,18 +121,17 @@ export default function HomePage() {
           <Search className="shrink-0 text-mana" size={22} aria-hidden />
           <span className="text-base">Search boss guides, builds, quests, maps...</span>
         </Link>
-      </section>
+      </Section>
 
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="mb-5 flex items-end justify-between gap-4">
-          <div>
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-mana">Popular</p>
-            <h2 className="text-2xl font-black text-white sm:text-3xl">Popular Games</h2>
-          </div>
-          <Link href="/games" className="shrink-0 text-sm font-medium text-slate-300 hover:text-white">
+      <Section
+        eyebrow="Popular"
+        title="Popular Games"
+        action={
+          <Button href="/games" variant="ghost" size="sm">
             View all games
-          </Link>
-        </div>
+          </Button>
+        }
+      >
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {featuredGames.map((game) => {
             const matched = guideCounts.get(game.match || game.name);
@@ -143,63 +139,42 @@ export default function HomePage() {
             const href = matched ? `/games/${matched.slug}` : `/guides#search`;
 
             return (
-              <article key={game.name} className="rounded-lg border border-line bg-panel p-5 transition hover:border-mana">
-                <h3 className="text-lg font-bold text-white">{game.name}</h3>
-                <p className="mt-2 min-h-12 text-sm leading-6 text-slate-400">{game.description}</p>
-                <div className="mt-5 flex items-center justify-between gap-3">
-                  <span className="text-sm font-medium text-mana">{guideCount} guides</span>
-                  <Link href={href} className="inline-flex items-center gap-2 text-sm font-bold text-white hover:text-mana">
-                    View guides
-                    <ArrowRight size={14} aria-hidden />
-                  </Link>
-                </div>
-              </article>
+              <GameCard key={game.name} name={game.name} description={game.description} guideCount={guideCount} href={href} />
             );
           })}
         </div>
-      </section>
+      </Section>
 
-      <section className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+      <Section className="py-4">
         <AdSlot label="In-feed Ad" />
-      </section>
+      </Section>
 
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <div className="mb-5 flex items-end justify-between gap-4">
-          <div>
-            <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-mana">Fresh</p>
-            <h2 className="text-2xl font-black text-white sm:text-3xl">Latest Guides</h2>
-          </div>
-          <Link href="/guides" className="shrink-0 text-sm font-medium text-slate-300 hover:text-white">
+      <Section
+        eyebrow="Fresh"
+        title="Latest Guides"
+        action={
+          <Button href="/guides" variant="ghost" size="sm">
             View all guides
-          </Link>
-        </div>
+          </Button>
+        }
+      >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {latestGuides.map((guide) => (
-            <article key={guide.slug} className="rounded-lg border border-line bg-panel p-5 transition hover:border-mana">
-              <div className="flex flex-wrap gap-2 text-xs">
-                <Link href={`/games/${slugify(guide.game)}`} className="rounded bg-white/5 px-2 py-1 text-slate-300">
-                  {guide.game}
-                </Link>
-                <Link href={`/categories/${slugify(guide.category)}`} className="rounded bg-mana/10 px-2 py-1 font-medium text-mana">
-                  {guide.category}
-                </Link>
-              </div>
-              <h3 className="mt-4 text-lg font-bold leading-snug text-white">
-                <Link href={`/guides/${guide.slug}`} className="hover:text-mana">
-                  {guide.title}
-                </Link>
-              </h3>
-              <p className="mt-2 line-clamp-3 text-sm leading-6 text-slate-400">{guide.description}</p>
-              <div className="mt-5 flex flex-wrap gap-3 text-xs text-slate-500">
-                <span>Updated {guide.updated}</span>
-                <span>{guide.readingTime}</span>
-              </div>
-            </article>
+            <GuideCard
+              key={guide.slug}
+              title={guide.title}
+              description={guide.description}
+              game={guide.gameName}
+              category={guide.categoryName}
+              updated={guide.updated}
+              readingTime={guide.readingTime}
+              href={`/guides/${guide.slug}`}
+            />
           ))}
         </div>
-      </section>
+      </Section>
 
-      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <Section>
         <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_340px]">
           <div>
             <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-mana">Browse</p>
@@ -215,7 +190,7 @@ export default function HomePage() {
                   <Link
                     key={category.label}
                     href={href}
-                    className="flex items-center gap-4 rounded-lg border border-line bg-panel p-5 hover:border-mana"
+                    className="flex items-center gap-4 rounded-lg border border-line bg-panel p-5 transition hover:border-mana"
                   >
                     <span className="grid h-11 w-11 place-items-center rounded-lg bg-mana/10 text-mana">
                       <Icon size={20} aria-hidden />
@@ -226,28 +201,19 @@ export default function HomePage() {
               })}
             </div>
           </div>
-          <aside className="rounded-lg border border-line bg-panel p-5">
-            <div className="flex items-center gap-3">
-              <BookOpen className="text-ember" size={20} aria-hidden />
-              <h2 className="text-xl font-black text-white">Trending Guides</h2>
-            </div>
-            <ol className="mt-4 space-y-3">
-              {trendingGuides.map((guide, index) => (
-                <li key={guide.slug} className="flex gap-3">
-                  <span className="text-sm font-black text-mana">{String(index + 1).padStart(2, "0")}</span>
-                  <Link href={`/guides/${guide.slug}`} className="text-sm font-medium leading-6 text-slate-300 hover:text-white">
-                    {guide.title}
-                  </Link>
-                </li>
-              ))}
-            </ol>
-          </aside>
+          <Sidebar
+            adLabel="Trending Sidebar Ad"
+            trendingGuides={trendingGuides.map((guide) => ({
+              title: guide.title,
+              href: `/guides/${guide.slug}`
+            }))}
+          />
         </div>
-      </section>
+      </Section>
 
-      <section className="mx-auto max-w-7xl px-4 pb-12 pt-4 sm:px-6 lg:px-8">
+      <Section className="pb-12 pt-4">
         <AdSlot label="Bottom Ad" />
-      </section>
+      </Section>
     </div>
   );
 }

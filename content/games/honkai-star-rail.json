@@ -1,0 +1,7 @@
+{
+  "name": "Honkai Star Rail",
+  "slug": "honkai-star-rail",
+  "description": "Turn-based RPG guides for character value, team building, relic priorities, account progression, and tier list planning.",
+  "platforms": ["PC", "iOS", "Android", "PlayStation"],
+  "genre": "Turn-based RPG"
+}

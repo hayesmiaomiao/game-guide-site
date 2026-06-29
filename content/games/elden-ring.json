@@ -1,0 +1,7 @@
+{
+  "name": "Elden Ring",
+  "slug": "elden-ring",
+  "description": "Open-world action RPG guides for early routing, boss preparation, weapon upgrades, build planning, and progression.",
+  "platforms": ["PC", "PlayStation", "Xbox"],
+  "genre": "Open-world action RPG"
+}

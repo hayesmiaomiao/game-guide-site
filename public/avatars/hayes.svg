@@ -1,0 +1,7 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hayes avatar">
+  <rect width="160" height="160" rx="32" fill="#101523"/>
+  <circle cx="80" cy="64" r="34" fill="#57D3FF" fill-opacity="0.22"/>
+  <circle cx="80" cy="58" r="24" fill="#DCEBFF"/>
+  <path d="M35 138C42 111 58 96 80 96C102 96 118 111 125 138H35Z" fill="#57D3FF"/>
+  <path d="M48 45C58 24 103 20 114 52C99 45 80 43 48 45Z" fill="#FF7A3D"/>
+</svg>

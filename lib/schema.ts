@@ -6,21 +6,20 @@ export function articleSchema(guide: Guide) {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: guide.title,
-    description: guide.description,
-    image: [guide.coverImage],
-    datePublished: guide.date,
-    dateModified: guide.updated,
+    description: guide.metaDescription || guide.description,
+    image: [guide.heroImage],
+    datePublished: guide.publishDate,
+    dateModified: guide.updatedDate,
     author: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      url: siteConfig.url
+      "@type": "Person",
+      name: guide.authorData?.name || guide.author
     },
     publisher: {
       "@type": "Organization",
       name: siteConfig.name
     },
     mainEntityOfPage: absoluteUrl(`/guides/${guide.slug}`),
-    articleSection: guide.category,
+    articleSection: guide.categoryName,
     keywords: guide.tags.join(", ")
   };
 }
@@ -59,7 +58,7 @@ export function guideBreadcrumbs(guide: Guide) {
   return breadcrumbSchema([
     { name: "Home", path: "/" },
     { name: "Guides", path: "/guides" },
-    { name: guide.game, path: `/games/${slugify(guide.game)}` },
+    { name: guide.gameName, path: `/games/${guide.game}` },
     { name: guide.title, path: `/guides/${guide.slug}` }
   ]);
 }

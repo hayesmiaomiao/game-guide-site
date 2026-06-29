@@ -1,10 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { getAllGames } from "@/lib/content";
+import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
 
 type Game = ReturnType<typeof getAllGames>[number];
 
-export function GameCard({ game }: { game: Game }) {
+type GameCardProps =
+  | {
+      game: Game;
+      name?: never;
+      description?: never;
+      guideCount?: never;
+      href?: never;
+    }
+  | {
+      game?: never;
+      name: string;
+      description: string;
+      guideCount: number;
+      href: string;
+    };
+
+export function GameCard(props: GameCardProps) {
+  if (!props.game) {
+    return (
+      <Card hover className="p-5">
+        <h3 className="text-lg font-bold text-white">{props.name}</h3>
+        <p className="mt-2 min-h-12 text-sm leading-6 text-slate-400">{props.description}</p>
+        <div className="mt-5 flex items-center justify-between gap-3">
+          <span className="text-sm font-medium text-mana">{props.guideCount} guides</span>
+          <Button href={props.href} variant="ghost" size="sm" className="px-0">
+            View guides
+          </Button>
+        </div>
+      </Card>
+    );
+  }
+
+  const { game } = props;
+
   return (
     <Link
       href={`/games/${game.slug}`}
