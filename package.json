@@ -11,6 +11,7 @@
   "content:check": "node scripts/validate-guide.js",
   "fix:images": "node scripts/fix-guide-images.js",
   "covers": "node scripts/cover-images.js",
+  "patch": "node scripts/check-patch.js",
   "publish": "node scripts/publish.js",
     "internal-links": "node scripts/internal-links.js",
     "toc": "node scripts/toc.js",
