@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "source": "ga4",
+  "propertyId": "",
+  "syncedAt": "",
+  "startDate": "2026-06-02",
+  "endDate": "2026-06-29",
+  "status": "not_configured",
+  "message": "Set GA4_PROPERTY_ID and GA4_ACCESS_TOKEN to refresh pageviews.",
+  "rows": []
+}

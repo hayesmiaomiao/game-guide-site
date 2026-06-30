@@ -1,0 +1,32 @@
+{
+  "provider": "Fanatical",
+  "trackingParameter": "ref",
+  "trackingId": "",
+  "disclosure": "GameVault Guides may earn a commission from eligible Fanatical purchases when affiliate tracking is configured.",
+  "products": [
+    {
+      "id": "elden-ring-pc",
+      "name": "Elden Ring for PC",
+      "description": "Compare the current officially licensed PC edition before choosing a platform or expansion.",
+      "url": "https://www.fanatical.com/en/game/elden-ring",
+      "cta": "Check Elden Ring PC options",
+      "games": ["elden-ring"],
+      "categories": ["*"],
+      "tags": ["elden-ring", "beginner", "build", "boss"],
+      "priority": 100,
+      "estimatedEpc": 0.12
+    },
+    {
+      "id": "pc-game-deals",
+      "name": "PC Game Deals",
+      "description": "Browse current PC game and bundle offers from an authorized digital retailer.",
+      "url": "https://www.fanatical.com/en/",
+      "cta": "Browse current PC game deals",
+      "games": ["*"],
+      "categories": ["beginner-guide", "tier-list"],
+      "tags": ["pc", "steam"],
+      "priority": 35,
+      "estimatedEpc": 0.09
+    }
+  ]
+}

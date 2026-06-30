@@ -1,0 +1,49 @@
+name: Daily Trend Discovery
+
+on:
+  schedule:
+    - cron: "15 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  trends:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate trend report
+        run: npm run trends
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
+      - name: Validate content
+        run: npm run content:check
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Commit daily trend data
+        run: |
+          if git diff --quiet -- data/trends; then
+            echo "No trend data changes."
+            exit 0
+          fi
+          git config user.name "gamevault-trend-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/trends
+          git commit -m "Update daily trend report"
+          git push

@@ -1,0 +1,14 @@
+{
+  "region": "US",
+  "maxItemsPerSource": 20,
+  "sources": [
+    { "id": "google-trends", "label": "Google Trends", "enabled": true },
+    { "id": "steam-top-sellers", "label": "Steam Top Sellers", "enabled": true },
+    { "id": "steam-most-played", "label": "Steam Most Played", "enabled": true },
+    { "id": "steam-upcoming", "label": "Steam Upcoming", "enabled": true },
+    { "id": "reddit-gaming", "label": "Reddit Gaming", "enabled": true },
+    { "id": "youtube-gaming", "label": "YouTube Gaming", "enabled": true },
+    { "id": "search-console-winners", "label": "Search Console Winners", "enabled": true },
+    { "id": "keyword-backlog", "label": "Keyword Backlog", "enabled": true }
+  ]
+}

@@ -5,7 +5,13 @@ import matter from "gray-matter";
 export const keywordSources = [
   "manual",
   "search-console",
+  "google-trends",
+  "steam-top-sellers",
+  "steam-most-played",
+  "steam-upcoming",
   "reddit",
+  "reddit-gaming",
+  "youtube-gaming",
   "people-also-ask",
   "google-suggest"
 ] as const;

@@ -3,6 +3,8 @@ const { spawnSync } = require("child_process");
 const steps = [
   "batch",
   "patch",
+  "affiliate",
+  "analytics:sync",
   "toc",
   "internal-links",
   "faq",

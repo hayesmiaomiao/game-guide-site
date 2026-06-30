@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "ignored": [],
+  "runs": [
+    {
+      "date": "2026-06-30",
+      "generatedAt": "2026-06-30T03:04:47.885Z",
+      "opportunities": [
+        {
+          "id": "keyword-backlog:the-legend-of-zelda-tears-of-the-kingdom:early-zonaite-farming",
+          "score": 78
+        },
+        {
+          "id": "keyword-backlog:elden-ring:malenia-phase-two-strategy",
+          "score": 78
+        },
+        {
+          "id": "keyword-backlog:elden-ring:best-poise-break-weapons",
+          "score": 74
+        },
+        {
+          "id": "keyword-backlog:elden-ring:all-sacred-tear-locations",
+          "score": 72
+        },
+        {
+          "id": "keyword-backlog:honkai-star-rail:free-to-play-team-progression",
+          "score": 72
+        },
+        {
+          "id": "keyword-backlog:the-legend-of-zelda-tears-of-the-kingdom:regional-phenomena-quest-order",
+          "score": 67
+        },
+        {
+          "id": "keyword-backlog:elden-ring:shadow-realm-progression-route",
+          "score": 67
+        },
+        {
+          "id": "keyword-backlog:the-legend-of-zelda-tears-of-the-kingdom:depths-armor-locations",
+          "score": 66
+        },
+        {
+          "id": "keyword-backlog:elden-ring:intelligence-staff-progression",
+          "score": 63
+        },
+        {
+          "id": "keyword-backlog:elden-ring:best-spirit-ashes-early",
+          "score": 60
+        }
+      ]
+    }
+  ]
+}

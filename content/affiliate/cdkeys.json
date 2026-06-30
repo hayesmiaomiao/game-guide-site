@@ -1,0 +1,44 @@
+{
+  "provider": "CDKeys",
+  "trackingParameter": "mw_aref",
+  "trackingId": "",
+  "disclosure": "GameVault Guides may earn a commission from eligible CDKeys purchases when affiliate tracking is configured.",
+  "products": [
+    {
+      "id": "elden-ring-xbox",
+      "name": "Elden Ring Xbox Key",
+      "description": "Check platform, region, edition, and activation requirements before purchasing.",
+      "url": "https://www.cdkeys.com/xbox-live/elden-ring-xbox-one-xbox-series-x-s-ww",
+      "cta": "Check Elden Ring Xbox availability",
+      "games": ["elden-ring"],
+      "categories": ["*"],
+      "tags": ["xbox", "beginner", "boss", "build"],
+      "priority": 95,
+      "estimatedEpc": 0.11
+    },
+    {
+      "id": "elden-ring-dlc-pc",
+      "name": "Shadow of the Erdtree PC DLC",
+      "description": "Review edition, region, base-game, and activation requirements before buying the expansion.",
+      "url": "https://www.cdkeys.com/pc/elden-ring-shadow-of-the-erdtree-pc-dlc-steam-us-row",
+      "cta": "Check PC expansion availability",
+      "games": ["elden-ring"],
+      "categories": ["build-guide", "boss-guide", "walkthrough", "map-guide"],
+      "tags": ["shadow", "dlc", "boss", "build", "map"],
+      "priority": 85,
+      "estimatedEpc": 0.1
+    },
+    {
+      "id": "steam-wallet",
+      "name": "Steam Wallet Credit",
+      "description": "Compare region-compatible Steam Wallet options for PC game purchases.",
+      "url": "https://www.cdkeys.com/steam-wallet-top-up-30-eur-eu",
+      "cta": "Check Steam Wallet options",
+      "games": ["*"],
+      "categories": ["tier-list", "beginner-guide"],
+      "tags": ["pc", "steam"],
+      "priority": 30,
+      "estimatedEpc": 0.07
+    }
+  ]
+}

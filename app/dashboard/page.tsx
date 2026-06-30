@@ -2,9 +2,12 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
 import matter from "gray-matter";
+import { readAffiliateReport } from "@/lib/affiliate";
+import { readPagePerformance } from "@/lib/analytics";
 import { readKeywordIdeas } from "@/lib/keywords";
 import { readGrowthPlan } from "@/lib/growth";
 import { readSearchConsoleData } from "@/lib/search-console";
+import { readTrendReport } from "@/lib/trends";
 import { DashboardClient, type DashboardGuide } from "./DashboardClient";
 
 export const metadata: Metadata = {
@@ -15,6 +18,8 @@ export const metadata: Metadata = {
     follow: false
   }
 };
+
+export const dynamic = "force-static";
 
 const guidesDirectory = path.join(process.cwd(), "content", "guides");
 
@@ -81,8 +86,11 @@ export default function DashboardPage() {
     <DashboardClient
       guides={readDashboardGuides()}
       keywords={readKeywordIdeas()}
+      analyticsPerformance={readPagePerformance()}
+      affiliateReport={readAffiliateReport()}
       growthPlan={readGrowthPlan()}
       searchConsole={readSearchConsoleData()}
+      trendReport={readTrendReport()}
     />
   );
 }

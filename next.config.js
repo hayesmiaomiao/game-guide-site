@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: process.env.NODE_ENV === "production" ? "export" : undefined,
+  output: "export",
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   images: {
     unoptimized: true,

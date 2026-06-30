@@ -1,0 +1,44 @@
+{
+  "provider": "Amazon",
+  "trackingParameter": "tag",
+  "trackingId": "",
+  "disclosure": "As an Amazon Associate, GameVault Guides may earn from qualifying purchases when a tracking ID is configured.",
+  "products": [
+    {
+      "id": "elden-ring-strategy-books",
+      "name": "Elden Ring Strategy Books",
+      "description": "A print reference for maps, equipment, encounters, and completion planning.",
+      "url": "https://www.amazon.com/s?k=elden+ring+strategy+guide",
+      "cta": "Browse Elden Ring strategy books",
+      "games": ["elden-ring"],
+      "categories": ["beginner-guide", "map-guide", "walkthrough"],
+      "tags": ["beginner", "map", "boss", "quest"],
+      "priority": 90,
+      "estimatedEpc": 0.08
+    },
+    {
+      "id": "gaming-controller",
+      "name": "Gaming Controller",
+      "description": "Compare current controllers for long sessions, precise movement, and comfortable exploration.",
+      "url": "https://www.amazon.com/s?k=gaming+controller",
+      "cta": "Compare gaming controllers",
+      "games": ["*"],
+      "categories": ["build-guide", "boss-guide", "walkthrough"],
+      "tags": ["build", "boss", "combat", "beginner"],
+      "priority": 65,
+      "estimatedEpc": 0.07
+    },
+    {
+      "id": "gaming-headset",
+      "name": "Gaming Headset",
+      "description": "Compare headsets for directional audio, dialogue, and longer guide sessions.",
+      "url": "https://www.amazon.com/s?k=gaming+headset",
+      "cta": "Compare gaming headsets",
+      "games": ["*"],
+      "categories": ["map-guide", "quest-guide", "tier-list"],
+      "tags": ["map", "quest", "exploration"],
+      "priority": 50,
+      "estimatedEpc": 0.06
+    }
+  ]
+}
