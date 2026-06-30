@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import type { Metadata } from "next";
 import matter from "gray-matter";
+import { readKeywordIdeas } from "@/lib/keywords";
 import { DashboardClient, type DashboardGuide } from "./DashboardClient";
 
 export const metadata: Metadata = {
@@ -74,5 +75,7 @@ function readDashboardGuides(): DashboardGuide[] {
 }
 
 export default function DashboardPage() {
-  return <DashboardClient guides={readDashboardGuides()} />;
+  return (
+    <DashboardClient guides={readDashboardGuides()} keywords={readKeywordIdeas()} />
+  );
 }

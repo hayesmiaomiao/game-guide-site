@@ -16,6 +16,7 @@
   "patch": "node scripts/check-patch.js",
   "review": "tsx scripts/review/review-all.ts",
   "rewrite": "tsx scripts/rewrite/rewrite-all.ts",
+  "keyword:scan": "tsx scripts/keywords/scan-keywords.ts",
   "publish": "node scripts/publish.js",
     "internal-links": "node scripts/internal-links.js",
     "toc": "node scripts/toc.js",

@@ -6,13 +6,20 @@ import {
   AlertTriangle,
   BookOpenText,
   Check,
+  Clipboard,
+  Clock3,
+  Gauge,
   Gamepad2,
   ImageIcon,
   Layers3,
+  ListOrdered,
+  Play,
   Search,
   X
 } from "lucide-react";
 import { useMemo, useState } from "react";
+import type { KeywordIdea } from "@/lib/keywords";
+import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
 export type DashboardGuide = {
@@ -39,6 +46,7 @@ export type DashboardGuide = {
 
 type DashboardClientProps = {
   guides: DashboardGuide[];
+  keywords: KeywordIdea[];
 };
 
 type NeedUpdateFilter = "all" | "yes" | "no";
@@ -122,12 +130,26 @@ function GuideImage({ guide }: { guide: DashboardGuide }) {
   );
 }
 
-export function DashboardClient({ guides }: DashboardClientProps) {
+function generationCommand(idea: KeywordIdea) {
+  const quote = (value: string) => `"${value.replace(/"/g, '\\"')}"`;
+  return `npm run generate:guide:offline -- --game ${quote(idea.game)} --keyword ${quote(idea.keyword)} --category ${quote(idea.category)} --difficulty ${quote(idea.difficulty)}`;
+}
+
+function sourceLabel(source: string) {
+  return source
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
+export function DashboardClient({ guides, keywords }: DashboardClientProps) {
   const [gameFilter, setGameFilter] = useState("all");
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [needsUpdateFilter, setNeedsUpdateFilter] =
     useState<NeedUpdateFilter>("all");
   const [searchQuery, setSearchQuery] = useState("");
+  const [generationQueue, setGenerationQueue] = useState<string[]>([]);
+  const [queueCopied, setQueueCopied] = useState(false);
 
   const games = useMemo(
     () =>
@@ -182,6 +204,45 @@ export function DashboardClient({ guides }: DashboardClientProps) {
       return true;
     });
   }, [categoryFilter, gameFilter, guides, needsUpdateFilter, searchQuery]);
+  const pendingKeywords = useMemo(
+    () =>
+      keywords
+        .filter((idea) => idea.status === "pending")
+        .sort(
+          (left, right) =>
+            left.priority - right.priority ||
+            right.order - left.order ||
+            left.keyword.localeCompare(right.keyword)
+        ),
+    [keywords]
+  );
+  const completedKeywords = keywords.length - pendingKeywords.length;
+  const averagePriority = keywords.length
+    ? (
+        keywords.reduce((total, idea) => total + idea.priority, 0) /
+        keywords.length
+      ).toFixed(1)
+    : "0.0";
+  const newestKeywords = useMemo(
+    () => [...keywords].sort((left, right) => right.order - left.order).slice(0, 5),
+    [keywords]
+  );
+  const highestPriority = pendingKeywords.filter(
+    (idea) => idea.priority === pendingKeywords[0]?.priority
+  );
+
+  function prepareGenerationQueue(limit: number) {
+    setGenerationQueue(
+      pendingKeywords.slice(0, limit).map((idea) => generationCommand(idea))
+    );
+    setQueueCopied(false);
+  }
+
+  async function copyGenerationQueue() {
+    if (!generationQueue.length) return;
+    await navigator.clipboard.writeText(generationQueue.join("\n"));
+    setQueueCopied(true);
+  }
 
   const topCards = [
     {
@@ -247,6 +308,97 @@ export function DashboardClient({ guides }: DashboardClientProps) {
             );
           })}
         </div>
+      </section>
+
+      <section className="mt-8" aria-labelledby="keywords-heading">
+        <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+          <div>
+            <p className="mb-1 text-xs font-bold uppercase text-mana">
+              Keyword Intelligence
+            </p>
+            <h2 id="keywords-heading" className="text-lg font-bold text-white">
+              Content Opportunities
+            </h2>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Button
+              type="button"
+              size="sm"
+              onClick={() => prepareGenerationQueue(1)}
+              disabled={!pendingKeywords.length}
+            >
+              <Play size={15} aria-hidden />
+              Generate Next
+            </Button>
+            <Button
+              type="button"
+              size="sm"
+              variant="secondary"
+              onClick={() => prepareGenerationQueue(10)}
+              disabled={!pendingKeywords.length}
+            >
+              <ListOrdered size={15} aria-hidden />
+              Generate Top 10
+            </Button>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-3 gap-3">
+          <KeywordMetric
+            label="Pending Keywords"
+            value={pendingKeywords.length}
+            icon={Clock3}
+            tone="text-ember bg-ember/10"
+          />
+          <KeywordMetric
+            label="Completed"
+            value={completedKeywords}
+            icon={Check}
+            tone="text-toxic bg-toxic/10"
+          />
+          <KeywordMetric
+            label="Average Priority"
+            value={averagePriority}
+            icon={Gauge}
+            tone="text-mana bg-mana/10"
+          />
+        </div>
+
+        <div className="mt-4 grid gap-4 lg:grid-cols-3">
+          <KeywordList
+            title="Top Opportunities"
+            ideas={pendingKeywords.slice(0, 5)}
+          />
+          <KeywordList title="Newest Keywords" ideas={newestKeywords} />
+          <KeywordList
+            title="Highest Priority"
+            ideas={highestPriority.slice(0, 5)}
+          />
+        </div>
+
+        {generationQueue.length ? (
+          <Card className="mt-4 p-4">
+            <div className="flex items-center justify-between gap-3">
+              <h3 className="text-sm font-bold text-white">Generation Queue</h3>
+              <button
+                type="button"
+                onClick={() => void copyGenerationQueue()}
+                title="Copy generation commands"
+                className="grid h-9 w-9 place-items-center rounded border border-line text-slate-300 hover:border-mana hover:text-white"
+              >
+                {queueCopied ? (
+                  <Check size={16} aria-hidden />
+                ) : (
+                  <Clipboard size={16} aria-hidden />
+                )}
+                <span className="sr-only">Copy generation commands</span>
+              </button>
+            </div>
+            <pre className="mt-3 max-h-56 overflow-auto whitespace-pre-wrap rounded border border-line bg-void p-3 text-xs leading-5 text-slate-300">
+              {generationQueue.join("\n")}
+            </pre>
+          </Card>
+        ) : null}
       </section>
 
       <section className="mt-8" aria-labelledby="games-heading">
@@ -455,7 +607,7 @@ export function DashboardClient({ guides }: DashboardClientProps) {
                     </td>
                     <td className="max-w-[300px] px-3 py-3 text-xs leading-5 text-slate-400">
                       {guide.topProblems.length
-                        ? guide.topProblems.join(" · ")
+                        ? guide.topProblems.join(" / ")
                         : "No major problems"}
                     </td>
                     <td className="px-3 py-3">
@@ -490,7 +642,7 @@ export function DashboardClient({ guides }: DashboardClientProps) {
                     {guide.title}
                   </Link>
                   <p className="mt-1 text-xs text-slate-500">
-                    {guide.gameName} · {guide.categoryName}
+                    {guide.gameName} / {guide.categoryName}
                   </p>
                 </div>
               </div>
@@ -530,7 +682,7 @@ export function DashboardClient({ guides }: DashboardClientProps) {
                 <div>
                   <dt className="text-slate-500">Content Health</dt>
                   <dd className="mt-1 text-slate-200">
-                    FAQ {guide.faqCount} · TOC {guide.tocExists ? "Yes" : "No"} · Related{" "}
+                    FAQ {guide.faqCount} / TOC {guide.tocExists ? "Yes" : "No"} / Related{" "}
                     {guide.relatedExists ? "Yes" : "No"}
                   </dd>
                 </div>
@@ -538,7 +690,7 @@ export function DashboardClient({ guides }: DashboardClientProps) {
                   <dt className="text-slate-500">Top Problems</dt>
                   <dd className="mt-1 leading-5 text-slate-300">
                     {guide.topProblems.length
-                      ? guide.topProblems.join(" · ")
+                      ? guide.topProblems.join(" / ")
                       : "No major problems"}
                   </dd>
                 </div>
@@ -554,6 +706,73 @@ export function DashboardClient({ guides }: DashboardClientProps) {
         ) : null}
       </section>
     </div>
+  );
+}
+
+function KeywordMetric({
+  label,
+  value,
+  icon: Icon,
+  tone
+}: {
+  label: string;
+  value: string | number;
+  icon: typeof Clock3;
+  tone: string;
+}) {
+  return (
+    <Card className="p-3 sm:p-4">
+      <div className="flex items-center justify-between gap-2">
+        <div className="min-w-0">
+          <p className="text-xs text-slate-400">{label}</p>
+          <p className="mt-1 text-xl font-bold text-white sm:text-2xl">{value}</p>
+        </div>
+        <span
+          className={`hidden h-9 w-9 shrink-0 place-items-center rounded sm:grid ${tone}`}
+        >
+          <Icon size={17} aria-hidden />
+        </span>
+      </div>
+    </Card>
+  );
+}
+
+function KeywordList({
+  title,
+  ideas
+}: {
+  title: string;
+  ideas: KeywordIdea[];
+}) {
+  return (
+    <Card className="overflow-hidden">
+      <h3 className="border-b border-line px-4 py-3 text-sm font-bold text-white">
+        {title}
+      </h3>
+      {ideas.length ? (
+        <ul className="divide-y divide-line/70">
+          {ideas.map((idea) => (
+            <li key={`${title}-${idea.order}`} className="px-4 py-3">
+              <div className="flex items-start justify-between gap-3">
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-slate-100">
+                    {idea.keyword}
+                  </p>
+                  <p className="mt-1 text-xs text-slate-500">
+                    {idea.game} / {sourceLabel(idea.source)}
+                  </p>
+                </div>
+                <span className="shrink-0 rounded bg-mana/10 px-2 py-1 text-xs font-bold text-mana">
+                  P{idea.priority}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="px-4 py-6 text-sm text-slate-500">No keywords available.</p>
+      )}
+    </Card>
   );
 }
 
