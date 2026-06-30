@@ -3,6 +3,7 @@ import path from "node:path";
 import type { Metadata } from "next";
 import matter from "gray-matter";
 import { readKeywordIdeas } from "@/lib/keywords";
+import { readSearchConsoleData } from "@/lib/search-console";
 import { DashboardClient, type DashboardGuide } from "./DashboardClient";
 
 export const metadata: Metadata = {
@@ -76,6 +77,10 @@ function readDashboardGuides(): DashboardGuide[] {
 
 export default function DashboardPage() {
   return (
-    <DashboardClient guides={readDashboardGuides()} keywords={readKeywordIdeas()} />
+    <DashboardClient
+      guides={readDashboardGuides()}
+      keywords={readKeywordIdeas()}
+      searchConsole={readSearchConsoleData()}
+    />
   );
 }

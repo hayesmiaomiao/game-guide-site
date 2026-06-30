@@ -19,8 +19,10 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { KeywordIdea } from "@/lib/keywords";
+import type { SearchConsoleDataset } from "@/lib/search-console";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
+import { SearchConsolePanel } from "./search-console";
 
 export type DashboardGuide = {
   title: string;
@@ -47,6 +49,7 @@ export type DashboardGuide = {
 type DashboardClientProps = {
   guides: DashboardGuide[];
   keywords: KeywordIdea[];
+  searchConsole: SearchConsoleDataset;
 };
 
 type NeedUpdateFilter = "all" | "yes" | "no";
@@ -142,7 +145,11 @@ function sourceLabel(source: string) {
     .join(" ");
 }
 
-export function DashboardClient({ guides, keywords }: DashboardClientProps) {
+export function DashboardClient({
+  guides,
+  keywords,
+  searchConsole
+}: DashboardClientProps) {
   const [gameFilter, setGameFilter] = useState("all");
   const [categoryFilter, setCategoryFilter] = useState("all");
   const [needsUpdateFilter, setNeedsUpdateFilter] =
@@ -400,6 +407,8 @@ export function DashboardClient({ guides, keywords }: DashboardClientProps) {
           </Card>
         ) : null}
       </section>
+
+      <SearchConsolePanel data={searchConsole} />
 
       <section className="mt-8" aria-labelledby="games-heading">
         <div className="mb-3 flex items-end justify-between gap-3">
