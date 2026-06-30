@@ -2,15 +2,15 @@
 
 ## 1. Project Goal
 
-GameVault Guides is a static-exported, AI-assisted game guide content platform built with Next.js, TypeScript, Tailwind CSS, and MDX.
+GameVault Guides is an AI-assisted game guide content platform built with Next.js, TypeScript, Tailwind CSS, and MDX.
 
-The platform is designed to publish English game guide content at scale, including beginner guides, walkthroughs, tier lists, build guides, map guides, quest guides, boss guides, and patch-aware strategy pages. The site must remain compatible with static hosting, especially Hostinger static deployment, while supporting a content engine that can later accept AI-generated drafts in bulk.
+The platform is designed to publish English game guide content at scale, including beginner guides, walkthroughs, tier lists, build guides, map guides, quest guides, boss guides, and patch-aware strategy pages. Production uses the standard Next.js deployment on Vercel, with content routes statically generated at build time through the Vercel Next.js Builder.
 
 Primary goals:
 
 - Publish search-friendly game guide pages with clean internal linking.
 - Use structured content models for games, guides, authors, categories, and tags.
-- Support static export with `output: "export"` during production builds.
+- Keep guides, games, categories, tags, and the dashboard statically generated during production builds.
 - Keep content separate from page templates and reusable UI components.
 - Make future AI content generation predictable, validated, and easy to review.
 
@@ -414,7 +414,7 @@ Step details:
 
 5. Build
    - Run `npm run build`.
-   - Fix all build, type, and static export errors.
+   - Fix all build, type, and static-generation errors.
 
 6. Git commit
    - Commit only intentional content and code changes.
@@ -422,26 +422,26 @@ Step details:
 
 7. Deployment
    - Push to GitHub.
-   - Deploy static export output through Hostinger workflow.
+   - Deploy through the standard Vercel Next.js workflow.
 
 ## 8. Deployment Workflow
 
 Standard deployment flow:
 
 ```text
-local dev → npm run build → git commit → git push → GitHub → Hostinger
+local dev -> npm run build -> git commit -> git push -> GitHub -> Vercel
 ```
 
 Local development:
 
 - Run `npm run dev`.
 - Validate pages in the browser.
-- Avoid relying on server-only behavior because production is static export.
+- Keep content data reads deterministic so guide and dashboard pages can be prerendered during the build.
 
 Build:
 
 - Run `npm run build`.
-- Production build must generate static output compatible with Hostinger.
+- Production uses the standard Next.js build output consumed by the Vercel Next.js Builder.
 - Dynamic routes must export `generateStaticParams`.
 
 Git:
@@ -450,10 +450,11 @@ Git:
 - Commit intentional changes.
 - Push to GitHub.
 
-Hostinger:
+Vercel:
 
-- Deploy generated static files from the `out` directory.
-- Confirm `index.html`, route HTML files, `_next` assets, `robots.txt`, and `sitemap.xml` are uploaded.
+- Use the Next.js framework preset with no custom Output Directory.
+- Do not add `output: "export"` or depend on an `out` directory.
+- Confirm the deployment route list includes the dashboard and all generated content routes.
 
 ## 9. Scaling Rules
 
@@ -466,7 +467,7 @@ The system should support 100+ games and 10,000+ guides by following these rules
 - Avoid expensive client-side filtering over all content when pages become large.
 - Move search to a prebuilt index when guide count becomes large.
 - Keep guide pages statically generated.
-- Keep images optimized for static hosting and use meaningful alt text.
+- Keep images compatible with Next.js image optimization and use meaningful alt text.
 - Split large content helper logic into smaller modules if `lib/content.ts` becomes difficult to maintain.
 - Add validation scripts before bulk publishing AI-generated MDX.
 - Prefer explicit related links in frontmatter, then fallback to game/category/tag matching.
@@ -483,9 +484,9 @@ Codex must follow these rules for future development:
 - Prefer reusable components before adding page-specific markup.
 - Keep visual design consistent with the dark GameVault design system.
 - All dynamic routes must export `generateStaticParams`.
-- All dynamic routes used with static export must export `dynamicParams = false`.
-- Preserve `output: "export"` compatibility for production builds.
-- Do not introduce server runtime dependencies that static export cannot support.
+- Content-backed dynamic routes should export `dynamicParams = false` so unknown slugs return 404.
+- Keep Vercel deployment on the standard Next.js Builder with no custom Output Directory.
+- Dashboard and content collection data must be read from local files during prerendering.
 - Every development task must end with `npm run build`.
 - If the build fails, fix the failure before ending.
 - Do not delete existing pages or content unless explicitly requested.
