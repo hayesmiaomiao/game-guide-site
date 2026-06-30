@@ -12,7 +12,13 @@ import { JsonLd } from "@/components/JsonLd";
 import { BreadcrumbJsonLd } from "@/components/json-ld/BreadcrumbJsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
-import { getAdjacentGuides, getAllGuides, getGuideBySlug, getRelatedGuides } from "@/lib/content";
+import {
+  getAdjacentGuides,
+  getAllGuides,
+  getGuideBySlug,
+  getRelatedGuides
+} from "@/lib/content";
+import { FALLBACK_GUIDE_IMAGE } from "@/lib/guide-images";
 import { articleSchema, faqSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 import { slugify } from "@/lib/site";
@@ -26,6 +32,7 @@ export async function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const guide = getGuideBySlug(params.slug);
   if (!guide) return {};
+  const image = guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
 
   return {
     title: {
@@ -39,7 +46,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       description: guide.metaDescription,
       publishedTime: guide.publishDate,
       modifiedTime: guide.updatedDate,
-      images: [{ url: guide.heroImage, alt: guide.heroAlt }]
+      images: [{ url: image, alt: guide.heroAlt }]
     }
   };
 }
@@ -62,6 +69,7 @@ function mdxHeading(level: 2 | 3) {
 export default async function GuidePage({ params }: { params: { slug: string } }) {
   const guide = getGuideBySlug(params.slug);
   if (!guide) notFound();
+  const image = guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
 
   const relatedGuides = getRelatedGuides(guide, 3);
   const { previous, next } = getAdjacentGuides(guide);
@@ -113,7 +121,7 @@ export default async function GuidePage({ params }: { params: { slug: string } }
           </div>
 
           <div className="relative my-8 aspect-[16/9] overflow-hidden rounded-lg border border-line">
-            <Image src={guide.heroImage} alt={guide.heroAlt} fill priority className="object-cover" />
+            <Image src={image} alt={guide.heroAlt} fill priority className="object-cover" />
           </div>
 
           <Card className="mb-8 p-5">

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Clock, Signal } from "lucide-react";
 import type { Guide } from "@/lib/content";
+import { FALLBACK_GUIDE_IMAGE } from "@/lib/guide-images";
 import { slugify } from "@/lib/site";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
@@ -65,6 +66,8 @@ export function GuideCard(props: GuideCardProps) {
   const { guide } = props;
   const gameLabel = guide.gameName || guide.game;
   const categoryLabel = guide.categoryName || guide.category;
+  const imageSrc =
+    guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
   const gameHref = guide.game.startsWith("/") ? guide.game : `/games/${guide.game}`;
   const categoryHref = guide.category.startsWith("/") ? guide.category : `/categories/${guide.category}`;
 
@@ -73,7 +76,7 @@ export function GuideCard(props: GuideCardProps) {
       <Link href={`/guides/${guide.slug}`} className="block">
         <div className="relative aspect-[16/9] bg-slate-900">
           <Image
-            src={guide.coverImage}
+            src={imageSrc}
             alt={guide.coverAlt || `${guide.title} cover image`}
             fill
             sizes="(min-width: 1024px) 33vw, 100vw"

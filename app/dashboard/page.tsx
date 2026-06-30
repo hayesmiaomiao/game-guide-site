@@ -8,6 +8,7 @@ import { readKeywordIdeas } from "@/lib/keywords";
 import { readGrowthPlan } from "@/lib/growth";
 import { readSearchConsoleData } from "@/lib/search-console";
 import { readTrendReport } from "@/lib/trends";
+import { resolveGuideImage } from "@/lib/content";
 import { DashboardClient, type DashboardGuide } from "./DashboardClient";
 
 export const metadata: Metadata = {
@@ -70,8 +71,13 @@ function readDashboardGuides(): DashboardGuide[] {
         tocExists: /^##\s+Table of Contents\s*$/im.test(content),
         relatedExists:
           related.length > 0 || /^##\s+Related Guides\s*$/im.test(content),
-        image: String(data.heroImage || data.coverImage || ""),
-        imageAlt: String(data.heroAlt || data.coverAlt || `${data.title || slug} cover`)
+        image: resolveGuideImage(data),
+        imageAlt: String(
+          data.heroAlt ||
+            data.imageAlt ||
+            data.coverAlt ||
+            `${data.title || slug} cover`
+        )
       };
     })
     .sort((left, right) => {

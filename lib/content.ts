@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { FALLBACK_GUIDE_IMAGE } from "@/lib/guide-images";
 import { guideCategories, slugify } from "@/lib/site";
 
 const contentDir = path.join(process.cwd(), "content");
@@ -9,6 +10,7 @@ const gameDir = path.join(contentDir, "games");
 const authorDir = path.join(contentDir, "authors");
 const categoryDir = path.join(contentDir, "categories");
 const tagDir = path.join(contentDir, "tags");
+const publicDir = path.join(process.cwd(), "public");
 
 export type FaqItem = {
   question: string;
@@ -56,6 +58,7 @@ export type GuideFrontmatter = {
   publishDate: string;
   updatedDate: string;
   heroImage: string;
+  image?: string;
   heroAlt: string;
   excerpt: string;
   platform: string;
@@ -106,6 +109,24 @@ function normalizeSlug(value: string | undefined, fallback = "") {
   return value ? slugify(value) : fallback;
 }
 
+function localImageExists(value: unknown) {
+  if (typeof value !== "string" || !value.startsWith("/") || value.startsWith("//")) {
+    return false;
+  }
+
+  const pathname = value.split(/[?#]/, 1)[0];
+  const resolved = path.resolve(publicDir, pathname.replace(/^\/+/, ""));
+  if (!resolved.startsWith(`${publicDir}${path.sep}`)) return false;
+
+  return fs.existsSync(resolved) && fs.statSync(resolved).isFile();
+}
+
+export function resolveGuideImage(data: Record<string, unknown>) {
+  const candidates = [data.heroImage, data.image, FALLBACK_GUIDE_IMAGE];
+  const image = candidates.find(localImageExists);
+  return typeof image === "string" ? image : FALLBACK_GUIDE_IMAGE;
+}
+
 function extractHeadings(content: string) {
   return content
     .split(/\r?\n/)
@@ -141,8 +162,10 @@ function normalizeGuide(file: string): Guide {
   const reviewerSlug = normalizeSlug(data.reviewer, authorSlug);
   const publishDate = data.publishDate || data.date || "";
   const updatedDate = data.updatedDate || data.updated || publishDate;
-  const heroImage = data.heroImage || data.coverImage || "";
-  const heroAlt = data.heroAlt || data.coverAlt || `${data.title} cover image`;
+  const heroImage = resolveGuideImage(data);
+  const image = typeof data.image === "string" ? data.image : undefined;
+  const heroAlt =
+    data.heroAlt || data.imageAlt || data.coverAlt || `${data.title} cover image`;
   const excerpt = data.excerpt || data.description || "";
 
   return {
@@ -156,6 +179,7 @@ function normalizeGuide(file: string): Guide {
     publishDate,
     updatedDate,
     heroImage,
+    image,
     heroAlt,
     excerpt,
     platform: data.platform || "",
