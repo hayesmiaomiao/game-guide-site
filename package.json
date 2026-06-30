@@ -9,6 +9,7 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
   "image:prepare": "tsx scripts/images/generate-images.ts",
+  "image:generate": "tsx scripts/images/generate-ai-images.ts",
   "content:check": "node scripts/validate-guide.js",
   "fix:images": "node scripts/fix-guide-images.js",
   "covers": "node scripts/cover-images.js",

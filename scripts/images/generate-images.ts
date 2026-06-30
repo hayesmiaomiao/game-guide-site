@@ -112,7 +112,7 @@ function main() {
 
     for (const item of readGuides()) {
       const filename = createUniqueFilename(item.guide, usedFilenames);
-      const imagePath = `/images/generated/${filename}`;
+      const imagePath = `/images/guides/${filename}`;
       const prompt = buildImagePrompt(item.guide);
 
       if (usedPrompts.has(prompt)) {
