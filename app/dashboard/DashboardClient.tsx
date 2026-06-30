@@ -19,10 +19,12 @@ import {
 } from "lucide-react";
 import { useMemo, useState } from "react";
 import type { KeywordIdea } from "@/lib/keywords";
+import type { GrowthPlan } from "@/lib/growth";
 import type { SearchConsoleDataset } from "@/lib/search-console";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { SearchConsolePanel } from "./search-console";
+import { GrowthPanel } from "./growth";
 
 export type DashboardGuide = {
   title: string;
@@ -49,6 +51,7 @@ export type DashboardGuide = {
 type DashboardClientProps = {
   guides: DashboardGuide[];
   keywords: KeywordIdea[];
+  growthPlan: GrowthPlan;
   searchConsole: SearchConsoleDataset;
 };
 
@@ -148,6 +151,7 @@ function sourceLabel(source: string) {
 export function DashboardClient({
   guides,
   keywords,
+  growthPlan,
   searchConsole
 }: DashboardClientProps) {
   const [gameFilter, setGameFilter] = useState("all");
@@ -316,6 +320,8 @@ export function DashboardClient({
           })}
         </div>
       </section>
+
+      <GrowthPanel plan={growthPlan} />
 
       <section className="mt-8" aria-labelledby="keywords-heading">
         <div className="mb-4 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">

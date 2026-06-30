@@ -3,6 +3,7 @@ import path from "node:path";
 import type { Metadata } from "next";
 import matter from "gray-matter";
 import { readKeywordIdeas } from "@/lib/keywords";
+import { readGrowthPlan } from "@/lib/growth";
 import { readSearchConsoleData } from "@/lib/search-console";
 import { DashboardClient, type DashboardGuide } from "./DashboardClient";
 
@@ -80,6 +81,7 @@ export default function DashboardPage() {
     <DashboardClient
       guides={readDashboardGuides()}
       keywords={readKeywordIdeas()}
+      growthPlan={readGrowthPlan()}
       searchConsole={readSearchConsoleData()}
     />
   );
