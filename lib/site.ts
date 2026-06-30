@@ -1,6 +1,9 @@
 export const siteConfig = {
   name: process.env.NEXT_PUBLIC_SITE_NAME || "GameVault Guides",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://example.com").replace(/\/$/, ""),
+  url: (
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    "https://game-guide-site-topaz.vercel.app"
+  ).replace(/\/$/, ""),
   description:
     "English game guides, walkthroughs, tier lists, build guides, map guides, and quest help for players who want clear answers fast.",
   nav: [
