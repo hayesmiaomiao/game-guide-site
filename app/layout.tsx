@@ -1,9 +1,3 @@
-<head>
-  <meta
-    name="google-site-verification"
-    content="ctNANGYLL54OoiTJnGWujY2DcqiRnsfz0nA-a-2xQm0"
-  />
-</head>
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -12,28 +6,48 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+
   title: {
     default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`
+    template: `%s | ${siteConfig.name}`,
   },
+
   description: siteConfig.description,
+
   verification: {
-    google: "ctNANGYLL54OoiTJnGWujY2DcqiRnsfz0nA-a-2xQm0"
+    google: "ctNANGYLL54OoiTJnGWujY2DcqiRnsfz0nA-a-2xQm0",
   },
+
   alternates: {
-    canonical: "/"
+    canonical: "/",
   },
+
   openGraph: {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
     title: siteConfig.name,
-    description: siteConfig.description
-  }
+    description: siteConfig.description,
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: siteConfig.name,
+    description: siteConfig.description,
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="antialiased">
