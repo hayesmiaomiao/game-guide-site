@@ -1,3 +1,9 @@
+<head>
+  <meta
+    name="google-site-verification"
+    content="ctNANGYLL54OoiTJnGWujY2DcqiRnsfz0nA-a-2xQm0"
+  />
+</head>
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
