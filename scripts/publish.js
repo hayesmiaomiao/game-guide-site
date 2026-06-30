@@ -7,6 +7,7 @@ const steps = [
   "internal-links",
   "faq",
   "covers",
+  "review",
   "content:check",
   "build"
 ];

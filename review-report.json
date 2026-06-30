@@ -1,0 +1,966 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-30",
+  "summary": {
+    "totalGuides": 13,
+    "approved": 0,
+    "needsRewrite": 13,
+    "averageScore": 86
+  },
+  "guides": [
+    {
+      "slug": "elden-ring-beginner-guide",
+      "title": "Elden Ring Beginner Guide: First 10 Hours Route",
+      "game": "elden-ring",
+      "seoScore": 81,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Featured image file does not exist.",
+        "Guide is under 800 words.",
+        "SEO title should be between 30 and 65 characters."
+      ],
+      "duplicateSimilarity": 0.206,
+      "duplicateWith": "honkai-star-rail-tier-list",
+      "checks": {
+        "title": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "seo": {
+          "score": 16,
+          "maxScore": 20,
+          "problems": [
+            "SEO title should be between 30 and 65 characters."
+          ]
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Add a link to the game or category hub."
+          ]
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 8,
+          "maxScore": 10,
+          "problems": [
+            "Add a concise Quick Answer section."
+          ]
+        },
+        "readability": {
+          "score": 6,
+          "maxScore": 10,
+          "problems": [
+            "Guide is under 800 words."
+          ]
+        },
+        "duplicateRisk": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        },
+        "eeat": {
+          "score": 5,
+          "maxScore": 6,
+          "problems": [
+            "Editorial verification notes are missing."
+          ]
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-beginner-guide",
+      "title": "Elden Ring Best Beginner Guide Guide",
+      "game": "elden-ring",
+      "seoScore": 86,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-leveling-guide.",
+        "Featured image file does not exist.",
+        "Title contains a duplicated word."
+      ],
+      "duplicateSimilarity": 0.977,
+      "duplicateWith": "elden-ring-best-leveling-guide",
+      "checks": {
+        "title": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Title contains a duplicated word."
+          ]
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-leveling-guide."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-bleed-build",
+      "title": "Elden Ring Best Bleed Build Guide",
+      "game": "elden-ring",
+      "seoScore": 86,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-faith-build.",
+        "Featured image file does not exist.",
+        "Title should be between 35 and 70 characters."
+      ],
+      "duplicateSimilarity": 0.969,
+      "duplicateWith": "elden-ring-best-faith-build",
+      "checks": {
+        "title": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Title should be between 35 and 70 characters."
+          ]
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-faith-build."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-boss-order",
+      "title": "Elden Ring Best Boss Order Guide",
+      "game": "elden-ring",
+      "seoScore": 86,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-beginner-guide.",
+        "Featured image file does not exist.",
+        "Title should be between 35 and 70 characters."
+      ],
+      "duplicateSimilarity": 0.712,
+      "duplicateWith": "elden-ring-best-beginner-guide",
+      "checks": {
+        "title": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Title should be between 35 and 70 characters."
+          ]
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-beginner-guide."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-dex-build",
+      "title": "Elden Ring Best Dex Build Guide",
+      "game": "elden-ring",
+      "seoScore": 86,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-bleed-build.",
+        "Featured image file does not exist.",
+        "Title should be between 35 and 70 characters."
+      ],
+      "duplicateSimilarity": 0.963,
+      "duplicateWith": "elden-ring-best-bleed-build",
+      "checks": {
+        "title": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Title should be between 35 and 70 characters."
+          ]
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-bleed-build."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-early-weapons",
+      "title": "Elden Ring Best Early Weapons Guide",
+      "game": "elden-ring",
+      "seoScore": 89,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-bleed-build.",
+        "Featured image file does not exist."
+      ],
+      "duplicateSimilarity": 0.961,
+      "duplicateWith": "elden-ring-best-bleed-build",
+      "checks": {
+        "title": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-bleed-build."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-faith-build",
+      "title": "Elden Ring Best Faith Build Guide",
+      "game": "elden-ring",
+      "seoScore": 86,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-bleed-build.",
+        "Featured image file does not exist.",
+        "Title should be between 35 and 70 characters."
+      ],
+      "duplicateSimilarity": 0.969,
+      "duplicateWith": "elden-ring-best-bleed-build",
+      "checks": {
+        "title": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Title should be between 35 and 70 characters."
+          ]
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-bleed-build."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-intelligence-build",
+      "title": "Elden Ring Best Intelligence Build Guide",
+      "game": "elden-ring",
+      "seoScore": 89,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-bleed-build.",
+        "Featured image file does not exist."
+      ],
+      "duplicateSimilarity": 0.945,
+      "duplicateWith": "elden-ring-best-bleed-build",
+      "checks": {
+        "title": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-bleed-build."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-leveling-guide",
+      "title": "Elden Ring Best Leveling Guide Guide",
+      "game": "elden-ring",
+      "seoScore": 86,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-beginner-guide.",
+        "Featured image file does not exist.",
+        "Title contains a duplicated word."
+      ],
+      "duplicateSimilarity": 0.977,
+      "duplicateWith": "elden-ring-best-beginner-guide",
+      "checks": {
+        "title": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Title contains a duplicated word."
+          ]
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-beginner-guide."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-rune-farming",
+      "title": "Elden Ring Best Rune Farming Guide",
+      "game": "elden-ring",
+      "seoScore": 89,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Featured image file does not exist.",
+        "Content is too similar to elden-ring-best-boss-order.",
+        "Title should be between 35 and 70 characters."
+      ],
+      "duplicateSimilarity": 0.696,
+      "duplicateWith": "elden-ring-best-boss-order",
+      "checks": {
+        "title": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Title should be between 35 and 70 characters."
+          ]
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 3,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-boss-order."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "elden-ring-best-strength-build",
+      "title": "Elden Ring Best Strength Build Guide",
+      "game": "elden-ring",
+      "seoScore": 89,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Content is too similar to elden-ring-best-dex-build.",
+        "Featured image file does not exist."
+      ],
+      "duplicateSimilarity": 0.96,
+      "duplicateWith": "elden-ring-best-dex-build",
+      "checks": {
+        "title": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "readability": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "duplicateRisk": {
+          "score": 0,
+          "maxScore": 6,
+          "problems": [
+            "Content is too similar to elden-ring-best-dex-build."
+          ]
+        },
+        "eeat": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        }
+      }
+    },
+    {
+      "slug": "honkai-star-rail-tier-list",
+      "title": "Honkai Star Rail Tier List: Best Characters for New Accounts",
+      "game": "honkai-star-rail",
+      "seoScore": 85,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Featured image file does not exist.",
+        "Guide is under 800 words.",
+        "Add a link to the game or category hub."
+      ],
+      "duplicateSimilarity": 0.206,
+      "duplicateWith": "elden-ring-beginner-guide",
+      "checks": {
+        "title": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Add a link to the game or category hub."
+          ]
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 8,
+          "maxScore": 10,
+          "problems": [
+            "Add a concise Quick Answer section."
+          ]
+        },
+        "readability": {
+          "score": 6,
+          "maxScore": 10,
+          "problems": [
+            "Guide is under 800 words."
+          ]
+        },
+        "duplicateRisk": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        },
+        "eeat": {
+          "score": 5,
+          "maxScore": 6,
+          "problems": [
+            "Editorial verification notes are missing."
+          ]
+        }
+      }
+    },
+    {
+      "slug": "zelda-tears-depths-map-guide",
+      "title": "Zelda Tears of the Kingdom Depths Map Guide",
+      "game": "the-legend-of-zelda-tears-of-the-kingdom",
+      "seoScore": 85,
+      "reviewStatus": "Needs Rewrite",
+      "needsRewrite": true,
+      "topProblems": [
+        "Featured image file does not exist.",
+        "Guide is under 800 words.",
+        "Add a link to the game or category hub."
+      ],
+      "duplicateSimilarity": 0.137,
+      "duplicateWith": "elden-ring-best-rune-farming",
+      "checks": {
+        "title": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "seo": {
+          "score": 20,
+          "maxScore": 20,
+          "problems": []
+        },
+        "faq": {
+          "score": 10,
+          "maxScore": 10,
+          "problems": []
+        },
+        "toc": {
+          "score": 8,
+          "maxScore": 8,
+          "problems": []
+        },
+        "internalLinks": {
+          "score": 7,
+          "maxScore": 10,
+          "problems": [
+            "Add a link to the game or category hub."
+          ]
+        },
+        "image": {
+          "score": 5,
+          "maxScore": 10,
+          "problems": [
+            "Featured image file does not exist."
+          ]
+        },
+        "searchIntent": {
+          "score": 8,
+          "maxScore": 10,
+          "problems": [
+            "Add a concise Quick Answer section."
+          ]
+        },
+        "readability": {
+          "score": 6,
+          "maxScore": 10,
+          "problems": [
+            "Guide is under 800 words."
+          ]
+        },
+        "duplicateRisk": {
+          "score": 6,
+          "maxScore": 6,
+          "problems": []
+        },
+        "eeat": {
+          "score": 5,
+          "maxScore": 6,
+          "problems": [
+            "Editorial verification notes are missing."
+          ]
+        }
+      }
+    }
+  ]
+}

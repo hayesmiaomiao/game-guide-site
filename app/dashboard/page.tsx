@@ -50,6 +50,13 @@ function readDashboardGuides(): DashboardGuide[] {
           data.updatedDate || data.updated || data.publishDate || data.date || "Not set"
         ),
         needsUpdate: data.needsUpdate === true || data.needsUpdate === "true",
+        seoScore: Number(data.seoScore || 0),
+        reviewStatus: String(data.reviewStatus || "Not Reviewed"),
+        needsRewrite:
+          data.needsRewrite === true || data.needsRewrite === "true",
+        topProblems: Array.isArray(data.topProblems)
+          ? data.topProblems.map(String).slice(0, 3)
+          : [],
         slug,
         faqCount: faq.length,
         tocExists: /^##\s+Table of Contents\s*$/im.test(content),

@@ -25,6 +25,10 @@ export type DashboardGuide = {
   patch: string;
   updated: string;
   needsUpdate: boolean;
+  seoScore: number;
+  reviewStatus: string;
+  needsRewrite: boolean;
+  topProblems: string[];
   slug: string;
   faqCount: number;
   tocExists: boolean;
@@ -75,6 +79,23 @@ function StatusMark({ value, label }: { value: boolean; label: string }) {
     >
       <X size={14} aria-hidden />
       <span className="hidden xl:inline">No</span>
+    </span>
+  );
+}
+
+function SeoScore({ score }: { score: number }) {
+  const tone =
+    score >= 90
+      ? "bg-toxic/10 text-toxic"
+      : score >= 75
+        ? "bg-amber-400/10 text-amber-300"
+        : "bg-ember/10 text-ember";
+
+  return (
+    <span
+      className={`inline-flex min-w-10 justify-center rounded px-2 py-1 text-xs font-bold ${tone}`}
+    >
+      {score}
     </span>
   );
 }
@@ -359,7 +380,7 @@ export function DashboardClient({ guides }: DashboardClientProps) {
 
         <Card className="hidden overflow-hidden md:block">
           <div className="overflow-x-auto">
-            <table className="w-full min-w-[1240px] text-left text-sm">
+            <table className="w-full min-w-[1720px] text-left text-sm">
               <thead className="border-b border-line bg-white/[0.025] text-xs uppercase text-slate-500">
                 <tr>
                   <th className="px-3 py-3 font-semibold">Title</th>
@@ -368,6 +389,10 @@ export function DashboardClient({ guides }: DashboardClientProps) {
                   <th className="px-3 py-3 font-semibold">Patch</th>
                   <th className="px-3 py-3 font-semibold">Updated</th>
                   <th className="px-3 py-3 font-semibold">Need Update</th>
+                  <th className="px-3 py-3 font-semibold">SEO Score</th>
+                  <th className="px-3 py-3 font-semibold">Review Status</th>
+                  <th className="px-3 py-3 font-semibold">Needs Rewrite</th>
+                  <th className="px-3 py-3 font-semibold">Top Problems</th>
                   <th className="px-3 py-3 font-semibold">Image</th>
                   <th className="px-3 py-3 text-center font-semibold">FAQ</th>
                   <th className="px-3 py-3 text-center font-semibold">TOC</th>
@@ -407,6 +432,31 @@ export function DashboardClient({ guides }: DashboardClientProps) {
                           No
                         </span>
                       )}
+                    </td>
+                    <td className="px-3 py-3">
+                      <SeoScore score={guide.seoScore} />
+                    </td>
+                    <td className="px-3 py-3">
+                      <span
+                        className={
+                          guide.needsRewrite
+                            ? "text-ember"
+                            : "text-toxic"
+                        }
+                      >
+                        {guide.reviewStatus}
+                      </span>
+                    </td>
+                    <td className="px-3 py-3">
+                      <StatusMark
+                        value={guide.needsRewrite}
+                        label="Needs rewrite"
+                      />
+                    </td>
+                    <td className="max-w-[300px] px-3 py-3 text-xs leading-5 text-slate-400">
+                      {guide.topProblems.length
+                        ? guide.topProblems.join(" · ")
+                        : "No major problems"}
                     </td>
                     <td className="px-3 py-3">
                       <GuideImage guide={guide} />
@@ -462,10 +512,34 @@ export function DashboardClient({ guides }: DashboardClientProps) {
                   </dd>
                 </div>
                 <div>
+                  <dt className="text-slate-500">SEO Score</dt>
+                  <dd className="mt-1">
+                    <SeoScore score={guide.seoScore} />
+                  </dd>
+                </div>
+                <div>
+                  <dt className="text-slate-500">Review Status</dt>
+                  <dd
+                    className={
+                      guide.needsRewrite ? "mt-1 text-ember" : "mt-1 text-toxic"
+                    }
+                  >
+                    {guide.reviewStatus}
+                  </dd>
+                </div>
+                <div>
                   <dt className="text-slate-500">Content Health</dt>
                   <dd className="mt-1 text-slate-200">
                     FAQ {guide.faqCount} · TOC {guide.tocExists ? "Yes" : "No"} · Related{" "}
                     {guide.relatedExists ? "Yes" : "No"}
+                  </dd>
+                </div>
+                <div className="col-span-2">
+                  <dt className="text-slate-500">Top Problems</dt>
+                  <dd className="mt-1 leading-5 text-slate-300">
+                    {guide.topProblems.length
+                      ? guide.topProblems.join(" · ")
+                      : "No major problems"}
                   </dd>
                 </div>
               </dl>
