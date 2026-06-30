@@ -14,12 +14,13 @@ export const metadata: Metadata = {
 
   description: siteConfig.description,
 
-  verification: {
-    google: "ctNANGYLL54OoiTJnGWujY2DcqiRnsfz0nA-a-2xQm0",
-  },
-
   alternates: {
     canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
   },
 
   openGraph: {
@@ -36,11 +37,6 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
   },
-
-  robots: {
-    index: true,
-    follow: true,
-  },
 };
 
 export default function RootLayout({
@@ -50,6 +46,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="ctNANGYLL54OoiTJnGWujY2DcqiRnsfz0nA-a-2xQm0"
+        />
+      </head>
+
       <body className="antialiased">
         <Header />
         <main>{children}</main>
