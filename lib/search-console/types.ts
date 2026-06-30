@@ -19,7 +19,7 @@ export type SearchConsoleDataset = {
 
 export type SearchConsoleFetchOptions = {
   siteUrl: string;
-  accessToken: string;
+  accessToken?: string;
   startDate: string;
   endDate: string;
 };

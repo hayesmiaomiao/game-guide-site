@@ -4,6 +4,10 @@ import type {
   SearchConsoleFetchOptions,
   SearchConsoleRow
 } from "../../lib/search-console/types";
+import {
+  getSearchConsoleAccessToken,
+  refreshSearchConsoleAccessToken
+} from "../../lib/search-console/oauth";
 
 const API_ROOT = "https://www.googleapis.com/webmasters/v3";
 const PAGE_SIZE = 25_000;
@@ -22,32 +26,43 @@ type ApiResponse = {
 
 export async function fetchSearchConsoleData({
   siteUrl,
-  accessToken,
+  accessToken: configuredAccessToken,
   startDate,
   endDate
 }: SearchConsoleFetchOptions): Promise<SearchConsoleRow[]> {
   const rows: SearchConsoleRow[] = [];
   let startRow = 0;
+  let accessToken =
+    configuredAccessToken || (await getSearchConsoleAccessToken());
+  let hasRefreshedToken = false;
 
   while (true) {
-    const response = await fetch(
-      `${API_ROOT}/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          startDate,
-          endDate,
-          dimensions: ["date", "query", "page"],
-          dataState: "final",
-          rowLimit: PAGE_SIZE,
-          startRow
-        })
-      }
-    );
+    const requestPage = () =>
+      fetch(
+        `${API_ROOT}/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            startDate,
+            endDate,
+            dimensions: ["date", "query", "page"],
+            dataState: "final",
+            rowLimit: PAGE_SIZE,
+            startRow
+          })
+        }
+      );
+
+    let response = await requestPage();
+    if (response.status === 401 && !hasRefreshedToken) {
+      accessToken = await refreshSearchConsoleAccessToken();
+      hasRefreshedToken = true;
+      response = await requestPage();
+    }
 
     if (!response.ok) {
       const details = await response.text();
@@ -80,19 +95,17 @@ export async function fetchSearchConsoleData({
 
 async function run() {
   const siteUrl = process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL?.trim();
-  const accessToken = process.env.GOOGLE_SEARCH_CONSOLE_ACCESS_TOKEN?.trim();
   const startDate = process.env.GSC_START_DATE?.trim();
   const endDate = process.env.GSC_END_DATE?.trim();
 
-  if (!siteUrl || !accessToken || !startDate || !endDate) {
+  if (!siteUrl || !startDate || !endDate) {
     throw new Error(
-      "Set GOOGLE_SEARCH_CONSOLE_SITE_URL, GOOGLE_SEARCH_CONSOLE_ACCESS_TOKEN, GSC_START_DATE, and GSC_END_DATE before fetching."
+      "Set GOOGLE_SEARCH_CONSOLE_SITE_URL, GSC_START_DATE, and GSC_END_DATE before fetching."
     );
   }
 
   const rows = await fetchSearchConsoleData({
     siteUrl,
-    accessToken,
     startDate,
     endDate
   });

@@ -21,7 +21,6 @@ function defaultDateRange() {
 
 async function sync() {
   const siteUrl = process.env.GOOGLE_SEARCH_CONSOLE_SITE_URL?.trim();
-  const accessToken = process.env.GOOGLE_SEARCH_CONSOLE_ACCESS_TOKEN?.trim();
   const defaults = defaultDateRange();
   const startDate = process.env.GSC_START_DATE?.trim() || defaults.startDate;
   const endDate = process.env.GSC_END_DATE?.trim() || defaults.endDate;
@@ -29,16 +28,9 @@ async function sync() {
   if (!siteUrl) {
     throw new Error("GOOGLE_SEARCH_CONSOLE_SITE_URL is not configured in .env.");
   }
-  if (!accessToken) {
-    throw new Error(
-      "GOOGLE_SEARCH_CONSOLE_ACCESS_TOKEN is not configured in .env."
-    );
-  }
-
   console.log(`Syncing Search Console data for ${startDate} through ${endDate}...`);
   const rows = await fetchSearchConsoleData({
     siteUrl,
-    accessToken,
     startDate,
     endDate
   });
