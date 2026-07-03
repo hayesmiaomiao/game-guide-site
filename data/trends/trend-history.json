@@ -459,6 +459,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-07-03",
+      "generatedAt": "2026-07-03T11:42:35.514Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:conqueror-s-stage:conqueror-s-stage",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:luna-meridian:luna-meridian",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:idle-intergalactic-defense-league-exterminators:idle-intergalactic-defense-league-exterminators",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:grimvein:grimvein",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:tech-store-and-repair-simulator:tech-store-and-repair-simulator",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:savingsanta:savingsanta",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:livora:livora",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:forest-lookout:forest-lookout",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:meccha-chameleon:meccha-chameleon",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:olga-doesn-t-die:olga-doesn-t-die",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:brainrot-defender:brainrot-defender",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:by-my-side:by-my-side",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:landman",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:big-bear-lake-bald-eagles",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:rust:rust",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:the-hollow-road-prologue:the-hollow-road-prologue",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:battle-for-embolia:battle-for-embolia",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:cyberpunk-2077:cyberpunk-2077",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:mt-rushmore",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:avatar-legends-the-fighting-game:avatar-legends-the-fighting-game",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:tour-de-france-2026",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:brad-dalke",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:ice-cream-man:ice-cream-man",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:destiny-2:destiny-2",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:neo-node:neo-node",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:american-revolutionary-war:american-revolutionary-war",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:claire-liu",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:alerta-por-calor-extremo",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:assassin-s-creed-black-flag-resynced:assassin-s-creed-black-flag-resynced",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:chipstack:chipstack",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:important-people-of-history-presidents-george-washington:important-people-of-history-presidents-george-washington",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:openai",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:sand-raiders-of-sophie:sand-raiders-of-sophie",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:warhammer-40-000-darktide:warhammer-40-000-darktide",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:climate-change",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:important-people-of-history-presidents-thomas-jefferson:important-people-of-history-presidents-thomas-jefferson",
+          "score": 70
+        }
+      ]
     }
   ]
 }
