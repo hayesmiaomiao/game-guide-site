@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   verification: {
     google: "ctNANGYLL54OoiTJnGWujY2DcqiRnsfz0nA-a-2xQm0",
+    other: {
+      "google-adsense-account": "ca-pub-2035588771362299",
+    },
   },
   alternates: {
     canonical: "/",

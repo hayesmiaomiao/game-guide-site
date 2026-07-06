@@ -80,10 +80,23 @@ export default async function GuidePage({ params }: { params: { slug: string } }
     { label: guide.title, href: `/guides/${guide.slug}` }
   ];
 
+  // insert an AdSlot after every 5 rendered paragraphs in the MDX
+  let paraIndex = 0;
+  const P = ({ children, ...props }: HTMLAttributes<HTMLParagraphElement>) => {
+    paraIndex++;
+    return (
+      <>
+        <p {...props}>{children}</p>
+        {paraIndex % 5 === 0 ? <AdSlot label="In-article Ad" className="mt-6" /> : null}
+      </>
+    );
+  };
+
   const { content } = await compileMDX({
     source: guide.content,
     components: {
       AdSlot,
+      p: P,
       h2: mdxHeading(2),
       h3: mdxHeading(3)
     },
@@ -199,7 +212,7 @@ export default async function GuidePage({ params }: { params: { slug: string } }
           </nav>
         </div>
 
-        <aside className="space-y-5">
+        <aside className="hidden md:block md:sticky md:top-20 space-y-5">
           <AdSlot label="Article top ad" />
           {guide.authorData ? (
             <Card className="p-5">

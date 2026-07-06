@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { Search } from "lucide-react";
 import { GuideCard } from "@/components/GuideCard";
+import { AdSlot } from "@/components/AdSlot";
 import type { Guide } from "@/lib/content";
 
 export function GuideSearch({ guides }: { guides: Guide[] }) {
@@ -33,9 +34,18 @@ export function GuideSearch({ guides }: { guides: Guide[] }) {
         />
       </label>
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {results.map((guide) => (
-          <GuideCard key={guide.slug} guide={guide} />
-        ))}
+        {results.flatMap((guide, index) => {
+          const nodes = [<GuideCard key={guide.slug} guide={guide} />];
+          // insert an in-feed ad after every 5 guides
+          if ((index + 1) % 5 === 0) {
+            nodes.push(
+              <div key={`ad-${index}`} className="col-span-full">
+                <AdSlot label={`In-feed Ad`} />
+              </div>
+            );
+          }
+          return nodes;
+        })}
       </div>
       {!results.length ? (
         <div className="rounded-lg border border-line bg-panel p-8 text-center text-slate-400">

@@ -159,18 +159,28 @@ export default function HomePage() {
         }
       >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {latestGuides.map((guide) => (
-            <GuideCard
-              key={guide.slug}
-              title={guide.title}
-              description={guide.description}
-              game={guide.gameName}
-              category={guide.categoryName}
-              updated={guide.updated}
-              readingTime={guide.readingTime}
-              href={`/guides/${guide.slug}`}
-            />
-          ))}
+          {latestGuides.flatMap((guide, index) => {
+            const nodes = [
+              <GuideCard
+                key={guide.slug}
+                title={guide.title}
+                description={guide.description}
+                game={guide.gameName}
+                category={guide.categoryName}
+                updated={guide.updated}
+                readingTime={guide.readingTime}
+                href={`/guides/${guide.slug}`}
+              />
+            ];
+            if ((index + 1) % 5 === 0) {
+              nodes.push(
+                <div key={`ad-${index}`} className="col-span-full">
+                  <AdSlot label="In-feed Ad" />
+                </div>
+              );
+            }
+            return nodes;
+          })}
         </div>
       </Section>
 

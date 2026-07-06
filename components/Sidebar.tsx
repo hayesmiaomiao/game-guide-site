@@ -19,7 +19,7 @@ export function Sidebar({
   adLabel?: string;
 }) {
   return (
-    <aside className="space-y-5">
+    <aside className="hidden md:block md:sticky md:top-20 space-y-5">
       <AdSlot label={adLabel} />
       {featuredGuide ? (
         <Card className="p-5">
