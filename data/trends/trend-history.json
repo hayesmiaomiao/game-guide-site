@@ -1901,6 +1901,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-07-11",
+      "generatedAt": "2026-07-11T05:22:05.286Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:toonequest:toonequest",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:scribble-hunt:scribble-hunt",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:village-survivors:village-survivors",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:macht-cosmic-engine:macht-cosmic-engine",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:echolink-recursion:echolink-recursion",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:kvga:kvga",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:ashen-crown:ashen-crown",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:assassin-s-creed-black-flag-resynced:assassin-s-creed-black-flag-resynced",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:finding-cats:finding-cats",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:snooker-billiard:snooker-billiard",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:artesnaut:artesnaut",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:ea-sports-college-football-27:ea-sports-college-football-27",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:olivia-wilde",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:orpheus-to-hell-and-back:orpheus-to-hell-and-back",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:healthy-competition:healthy-competition",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:koa-peat",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:wuthering-waves:wuthering-waves",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:meccha-chameleon:meccha-chameleon",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:robin-williams",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:swordless:swordless",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:trump-endangered-species",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:booox:booox",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:gavin-newsom",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:custom-pinball:custom-pinball",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:granblue-fantasy-relink:granblue-fantasy-relink",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:new-movies-streaming",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:argentina-out",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:metalmuters:metalmuters",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:13-masca:13-masca",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:anya-taylor-joy",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:echoes-of-aincrad:echoes-of-aincrad",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:neko-station:neko-station",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:peyton-watson",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:sand-raiders-of-sophie:sand-raiders-of-sophie",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:backyard-baseball:backyard-baseball",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:drident:drident",
+          "score": 70
+        }
+      ]
     }
   ]
 }
