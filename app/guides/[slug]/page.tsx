@@ -20,7 +20,7 @@ import {
 } from "@/lib/content";
 import { FALLBACK_GUIDE_IMAGE } from "@/lib/guide-images";
 import { articleSchema, faqSchema } from "@/lib/schema";
-import { absoluteImageUrl, absoluteUrl, seoAlternates, siteConfig } from "@/lib/site";
+import { absoluteUrl, seoAlternates, siteConfig } from "@/lib/site";
 import { slugify } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -49,13 +49,13 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       siteName: siteConfig.name,
       publishedTime: guide.publishDate,
       modifiedTime: guide.updatedDate,
-      images: [{ url: absoluteImageUrl(image), alt: imageAlt }]
+      images: [{ url: absoluteUrl(image), alt: imageAlt }]
     },
     twitter: {
       card: "summary_large_image",
       title: guide.seoTitle,
       description: guide.metaDescription,
-      images: [absoluteImageUrl(image)]
+      images: [absoluteUrl(image)]
     }
   };
 }
