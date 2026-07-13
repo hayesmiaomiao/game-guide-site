@@ -36,3 +36,29 @@ export function slugify(value: string) {
 export function absoluteUrl(path = "/") {
   return `${siteConfig.url}${path.startsWith("/") ? path : `/${path}`}`;
 }
+
+export function absoluteImageUrl(src = "") {
+  if (!src) return absoluteUrl("/");
+  if (/^https?:\/\//i.test(src)) return src;
+  return absoluteUrl(src);
+}
+
+export function seoAlternates(path = "/") {
+  const url = absoluteUrl(path);
+  return {
+    canonical: url,
+    languages: {
+      "en-US": url,
+      "x-default": url
+    }
+  };
+}
+
+export function escapeXml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
