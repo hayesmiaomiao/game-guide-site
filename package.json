@@ -25,6 +25,8 @@
   "trends": "tsx scripts/trends/index.ts",
   "analytics:sync": "tsx scripts/analytics/sync.ts",
   "analytics:report": "tsx scripts/analytics/report.ts",
+  "images:generate": "node scripts/generate-guide-images.js",
+  "images:check": "node scripts/check-guide-images.js",
   "publish": "node scripts/publish.js",
     "internal-links": "node scripts/internal-links.js",
     "toc": "node scripts/toc.js",

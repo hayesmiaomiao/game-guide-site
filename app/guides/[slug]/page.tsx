@@ -7,7 +7,7 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
 import { AdSlot } from "@/components/AdSlot";
 import { Breadcrumb } from "@/components/Breadcrumb";
-import { GuideCard } from "@/components/GuideCard";
+import { InternalLinks } from "@/components/InternalLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { BreadcrumbJsonLd } from "@/components/json-ld/BreadcrumbJsonLd";
 import { Badge } from "@/components/ui/Badge";
@@ -20,7 +20,7 @@ import {
 } from "@/lib/content";
 import { FALLBACK_GUIDE_IMAGE } from "@/lib/guide-images";
 import { articleSchema, faqSchema } from "@/lib/schema";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteImageUrl, absoluteUrl, seoAlternates, siteConfig } from "@/lib/site";
 import { slugify } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -32,21 +32,30 @@ export async function generateStaticParams() {
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const guide = getGuideBySlug(params.slug);
   if (!guide) return {};
-  const image = guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
+  const image = guide.coverImage || guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
+  const imageAlt = guide.imageAlt || guide.heroAlt;
 
   return {
     title: {
       absolute: guide.seoTitle
     },
     description: guide.metaDescription,
-    alternates: { canonical: absoluteUrl(`/guides/${guide.slug}`) },
+    alternates: seoAlternates(`/guides/${guide.slug}`),
     openGraph: {
       type: "article",
       title: guide.seoTitle,
       description: guide.metaDescription,
+      url: absoluteUrl(`/guides/${guide.slug}`),
+      siteName: siteConfig.name,
       publishedTime: guide.publishDate,
       modifiedTime: guide.updatedDate,
-      images: [{ url: image, alt: guide.heroAlt }]
+      images: [{ url: absoluteImageUrl(image), alt: imageAlt }]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: guide.seoTitle,
+      description: guide.metaDescription,
+      images: [absoluteImageUrl(image)]
     }
   };
 }
@@ -69,9 +78,16 @@ function mdxHeading(level: 2 | 3) {
 export default async function GuidePage({ params }: { params: { slug: string } }) {
   const guide = getGuideBySlug(params.slug);
   if (!guide) notFound();
-  const image = guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
+  const image = guide.coverImage || guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
+  const imageAlt = guide.imageAlt || guide.heroAlt;
 
-  const relatedGuides = getRelatedGuides(guide, 3);
+  const allGuides = getAllGuides();
+  const relatedGuides = getRelatedGuides(guide, 4);
+  const popularGuides = allGuides.filter((item) => item.slug !== guide.slug).slice(0, 6);
+  const latestGuides = allGuides
+    .filter((item) => item.slug !== guide.slug)
+    .sort((left, right) => Number(new Date(right.updatedDate)) - Number(new Date(left.updatedDate)))
+    .slice(0, 6);
   const { previous, next } = getAdjacentGuides(guide);
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -134,8 +150,42 @@ export default async function GuidePage({ params }: { params: { slug: string } }
           </div>
 
           <div className="relative my-8 aspect-[16/9] overflow-hidden rounded-lg border border-line">
-            <Image src={image} alt={guide.heroAlt} fill priority className="object-cover" />
+            <Image src={image} alt={imageAlt} fill priority className="object-cover" />
           </div>
+
+          <Card className="mb-8 p-5 sm:p-6">
+            <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-mana">Guide Brief</p>
+            <h2 className="text-2xl font-black text-white">Quick Answer and Route</h2>
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              <div className="rounded-lg border border-line bg-white/[0.03] p-4">
+                <h3 className="font-bold text-white">Introduction</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-400">{guide.excerpt}</p>
+              </div>
+              <div className="rounded-lg border border-line bg-white/[0.03] p-4">
+                <h3 className="font-bold text-white">Quick Answer</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-400">
+                  For {guide.gameName}, start with the safest route in this {guide.categoryName.toLowerCase()}, then adjust
+                  around your level, patch version, available gear, and the problems listed below.
+                </p>
+              </div>
+              <div className="rounded-lg border border-line bg-white/[0.03] p-4">
+                <h3 className="font-bold text-white">Detailed Steps</h3>
+                <ol className="mt-2 list-decimal space-y-1 pl-5 text-sm leading-6 text-slate-400">
+                  <li>Check the requirements, patch notes, and starting assumptions.</li>
+                  <li>Follow the main route in order before optional upgrades or detours.</li>
+                  <li>Use the FAQ and related guides when a build, boss, map, or quest step branches.</li>
+                </ol>
+              </div>
+              <div className="rounded-lg border border-line bg-white/[0.03] p-4">
+                <h3 className="font-bold text-white">Common Mistakes</h3>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm leading-6 text-slate-400">
+                  <li>Skipping prerequisites before following later steps.</li>
+                  <li>Using outdated patch advice without checking the updated date.</li>
+                  <li>Ignoring tags and related guides that cover nearby systems.</li>
+                </ul>
+              </div>
+            </div>
+          </Card>
 
           <Card className="mb-8 p-5">
             <h2 className="text-xl font-black text-white">Table of Contents</h2>
@@ -168,23 +218,37 @@ export default async function GuidePage({ params }: { params: { slug: string } }
             </Card>
           ) : null}
 
-          <section className="mt-10">
-            <h2 className="text-2xl font-black text-white">Related Guides</h2>
-            <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              {relatedGuides.map((related) => (
-                <GuideCard
-                  key={related.slug}
-                  title={related.title}
-                  description={related.excerpt}
-                  game={related.gameName}
-                  category={related.categoryName}
-                  updated={related.updatedDate}
-                  readingTime={related.readingTime}
-                  href={`/guides/${related.slug}`}
-                />
-              ))}
-            </div>
-          </section>
+          <InternalLinks
+            sections={[
+              {
+                title: "Related Guides",
+                description: `More ${guide.gameName} pages connected to this topic.`,
+                links: relatedGuides.map((item) => ({
+                  title: item.title,
+                  href: `/guides/${item.slug}`,
+                  description: item.excerpt
+                }))
+              },
+              {
+                title: "Popular Guides",
+                description: "High-value guide hubs readers often open next.",
+                links: popularGuides.map((item) => ({
+                  title: item.title,
+                  href: `/guides/${item.slug}`,
+                  description: item.excerpt
+                }))
+              },
+              {
+                title: "Latest Guides",
+                description: "Recently updated pages to continue from here.",
+                links: latestGuides.map((item) => ({
+                  title: item.title,
+                  href: `/guides/${item.slug}`,
+                  description: item.excerpt
+                }))
+              }
+            ]}
+          />
 
           <nav className="mt-10 grid gap-4 md:grid-cols-2" aria-label="Previous and next guides">
             {previous ? (

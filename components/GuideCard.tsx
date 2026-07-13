@@ -67,7 +67,8 @@ export function GuideCard(props: GuideCardProps) {
   const gameLabel = guide.gameName || guide.game;
   const categoryLabel = guide.categoryName || guide.category;
   const imageSrc =
-    guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
+    guide.coverImage || guide.heroImage || guide.image || FALLBACK_GUIDE_IMAGE;
+  const imageAlt = guide.imageAlt || guide.coverAlt || `${guide.title} cover image`;
   const gameHref = guide.game.startsWith("/") ? guide.game : `/games/${guide.game}`;
   const categoryHref = guide.category.startsWith("/") ? guide.category : `/categories/${guide.category}`;
 
@@ -77,10 +78,11 @@ export function GuideCard(props: GuideCardProps) {
         <div className="relative aspect-[16/9] bg-slate-900">
           <Image
             src={imageSrc}
-            alt={guide.coverAlt || `${guide.title} cover image`}
+            alt={imageAlt}
             fill
             sizes="(min-width: 1024px) 33vw, 100vw"
             className="object-cover"
+            loading="lazy"
           />
         </div>
       </Link>

@@ -59,7 +59,9 @@ export type GuideFrontmatter = {
   updatedDate: string;
   heroImage: string;
   image?: string;
+  coverImage?: string;
   heroAlt: string;
+  imageAlt?: string;
   excerpt: string;
   platform: string;
   patch: string;
@@ -122,7 +124,7 @@ function localImageExists(value: unknown) {
 }
 
 export function resolveGuideImage(data: Record<string, unknown>) {
-  const candidates = [data.heroImage, data.image, FALLBACK_GUIDE_IMAGE];
+  const candidates = [data.coverImage, data.heroImage, data.image, FALLBACK_GUIDE_IMAGE];
   const image = candidates.find(localImageExists);
   return typeof image === "string" ? image : FALLBACK_GUIDE_IMAGE;
 }
@@ -164,8 +166,12 @@ function normalizeGuide(file: string): Guide {
   const updatedDate = data.updatedDate || data.updated || publishDate;
   const heroImage = resolveGuideImage(data);
   const image = typeof data.image === "string" ? data.image : undefined;
+  const coverImage = typeof data.coverImage === "string" && localImageExists(data.coverImage)
+    ? data.coverImage
+    : heroImage;
   const heroAlt =
     data.heroAlt || data.imageAlt || data.coverAlt || `${data.title} cover image`;
+  const imageAlt = data.imageAlt || heroAlt;
   const excerpt = data.excerpt || data.description || "";
 
   return {
@@ -181,6 +187,7 @@ function normalizeGuide(file: string): Guide {
     heroImage,
     image,
     heroAlt,
+    imageAlt,
     excerpt,
     platform: data.platform || "",
     patch: data.patch || "",
@@ -201,8 +208,8 @@ function normalizeGuide(file: string): Guide {
     description: excerpt,
     date: publishDate,
     updated: updatedDate,
-    coverImage: heroImage,
-    coverAlt: heroAlt
+    coverImage,
+    coverAlt: imageAlt
   };
 }
 
@@ -325,14 +332,55 @@ export function getGuidesByTag(slug: string) {
   return getAllGuides().filter((guide) => guide.tags.some((tag) => slugify(tag) === slug));
 }
 
-export function getRelatedGuides(guide: Guide, limit = 3) {
-  const explicit = guide.related.map(getGuideBySlug).filter((item): item is Guide => Boolean(item));
-  const fallback = getAllGuides().filter(
-    (item) =>
-      item.slug !== guide.slug &&
-      !explicit.some((related) => related.slug === item.slug) &&
-      (item.game === guide.game || item.category === guide.category || item.tags.some((tag) => guide.tags.includes(tag)))
+const intentTokenGroups = {
+  boss: ["boss", "bosses", "order"],
+  map: ["map", "maps", "depths", "route", "routes", "location", "locations"],
+  quest: ["quest", "quests", "walkthrough", "story"],
+  class: ["strength", "dex", "dexterity", "faith", "intelligence", "mage", "bleed", "blood", "beginner"],
+  weapon: ["weapon", "weapons", "sword", "katana", "staff", "seal", "bow", "shield"]
+};
+
+function guideTokenSet(guide: Guide) {
+  return new Set(
+    [guide.title, guide.excerpt, guide.category, guide.categoryName, guide.gameName, ...guide.tags]
+      .join(" ")
+      .toLowerCase()
+      .split(/[^a-z0-9]+/)
+      .filter((token) => token.length > 2)
   );
+}
+
+function relatedScore(source: Guide, candidate: Guide) {
+  const sourceTokens = guideTokenSet(source);
+  const candidateTokens = guideTokenSet(candidate);
+  let score = 0;
+
+  if (candidate.game === source.game) score += 100;
+  if (candidate.category === source.category) score += 30;
+
+  for (const token of Array.from(sourceTokens)) {
+    if (candidateTokens.has(token)) score += 3;
+  }
+
+  Object.values(intentTokenGroups).forEach((tokens) => {
+    const sourceMatches = tokens.some((token) => sourceTokens.has(token));
+    const candidateMatches = tokens.some((token) => candidateTokens.has(token));
+    if (sourceMatches && candidateMatches) score += 18;
+  });
+
+  return score;
+}
+
+export function getRelatedGuides(guide: Guide, limit = 4) {
+  const explicit = guide.related.map(getGuideBySlug).filter((item): item is Guide => Boolean(item));
+  const fallback = getAllGuides()
+    .filter((item) => item.slug !== guide.slug && !explicit.some((related) => related.slug === item.slug))
+    .sort(
+      (left, right) =>
+        relatedScore(guide, right) - relatedScore(guide, left) ||
+        Number(new Date(right.updatedDate)) - Number(new Date(left.updatedDate)) ||
+        left.title.localeCompare(right.title)
+    );
 
   return [...explicit, ...fallback].slice(0, limit);
 }
@@ -340,10 +388,23 @@ export function getRelatedGuides(guide: Guide, limit = 3) {
 export function getAdjacentGuides(guide: Guide) {
   const guides = getAllGuides();
   const index = guides.findIndex((item) => item.slug === guide.slug);
+  if (!guides.length || index < 0) {
+    return {
+      previous: undefined,
+      next: undefined
+    };
+  }
+
+  if (guides.length === 1) {
+    return {
+      previous: undefined,
+      next: undefined
+    };
+  }
 
   return {
-    previous: index > 0 ? guides[index - 1] : undefined,
-    next: index >= 0 && index < guides.length - 1 ? guides[index + 1] : undefined
+    previous: guides[(index - 1 + guides.length) % guides.length],
+    next: guides[(index + 1) % guides.length]
   };
 }
 
