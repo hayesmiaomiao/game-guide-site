@@ -2519,6 +2519,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-07-14",
+      "generatedAt": "2026-07-14T05:09:18.859Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:three-kingdoms-alias:three-kingdoms-alias",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:hotel-infinity:hotel-infinity",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:sudoku-haven:sudoku-haven",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:a-simpler-world:a-simpler-world",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:chronorewind-the-great-ritual:chronorewind-the-great-ritual",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:mandat:mandat",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:inga-chronicle:inga-chronicle",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:assassin-s-creed-black-flag-resynced:assassin-s-creed-black-flag-resynced",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:creepy-support:creepy-support",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:warena:warena",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:vellar:vellar",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:meccha-chameleon:meccha-chameleon",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:samsung-galaxy-z-fold-8",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:the-crimson-maid:the-crimson-maid",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:nevergrind:nevergrind",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:phoenix-arizona-dust-storm",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:chesscent:chesscent",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:ea-sports-college-football-27:ea-sports-college-football-27",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:martin-freeman",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:ted-danson",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:doomsday",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:zigdig:zigdig",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:ball2-battle:ball2-battle",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:saudi-arabia",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:wuthering-waves:wuthering-waves",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:railway-routes:railway-routes",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:tom-holland",
+          "score": 74
+        },
+        {
+          "id": "steam-top-sellers:granblue-fantasy-relink:granblue-fantasy-relink",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:little-rock-shop:little-rock-shop",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:mindy-kaling",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:angels-fall-first:angels-fall-first",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:d-topia:d-topia",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:maddox-chivan-jolie",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:destiny-2:destiny-2",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:call-of-duty-black-ops-ii:call-of-duty-black-ops-ii",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:elon-musk",
+          "score": 70
+        }
+      ]
     }
   ]
 }
