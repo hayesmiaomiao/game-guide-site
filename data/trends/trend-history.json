@@ -3549,6 +3549,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-07-19",
+      "generatedAt": "2026-07-19T05:31:49.345Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:don-t-pop-splash-race:don-t-pop-splash-race",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:aralsk-7:aralsk-7",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:geneloot:geneloot",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:typerain:typerain",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:sill-sticks:sill-sticks",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:ant-king-2015-2025:ant-king-2015-2025",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:delvegg:delvegg",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:starship-df:starship-df",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:against-wokou-frontline:against-wokou-frontline",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:aerolicious:aerolicious",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:assassin-s-creed-black-flag-resynced:assassin-s-creed-black-flag-resynced",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:dominion-of-the-forgotten:dominion-of-the-forgotten",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:rick-ross",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:funge:funge",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:meccha-chameleon:meccha-chameleon",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:tarik-skubal",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:funnel-runners:funnel-runners",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:hazen-s-children-2:hazen-s-children-2",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:spencer-torkelson",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:curry-barker",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:the-mound-omen-of-cthulhu:the-mound-omen-of-cthulhu",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:ludwika-paleta",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:two-clubs-one-player:two-clubs-one-player",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:frogrammer:frogrammer",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:halo-campaign-evolved:halo-campaign-evolved",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:powerball",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:castleborne-survivors:castleborne-survivors",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:snl-tonight",
+          "score": 74
+        },
+        {
+          "id": "steam-top-sellers:ea-sports-college-football-27:ea-sports-college-football-27",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:stratego-online:stratego-online",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:travis-bazzana",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:desire-netflix",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:football-card-battle:football-card-battle",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:ea-sports-fc-26:ea-sports-fc-26",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:chivas-de-guadalajara-vs-toluca-fc-standings",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:grand-theft-auto-v-enhanced:grand-theft-auto-v-enhanced",
+          "score": 70
+        }
+      ]
     }
   ]
 }
