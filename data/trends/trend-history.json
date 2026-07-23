@@ -4373,6 +4373,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-07-23",
+      "generatedAt": "2026-07-23T05:34:01.930Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:sniper-game:sniper-game",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:thevillage-possession:thevillage-possession",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:a-love-letter-in-snowfall:a-love-letter-in-snowfall",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:aether-crown:aether-crown",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:club-soko:club-soko",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:compile-and-defend:compile-and-defend",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:canvas-of-thoughts:canvas-of-thoughts",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:car-sales-simulator:car-sales-simulator",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:halo-campaign-evolved:halo-campaign-evolved",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:maze-nightmare-edge-of-darkness:maze-nightmare-edge-of-darkness",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:void-future-hacking-protocol:void-future-hacking-protocol",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:where-winds-meet:where-winds-meet",
+          "score": 81
+        },
+        {
+          "id": "google-trends:gaming:jana-nayagan",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:shift-at-midnight:shift-at-midnight",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:the-long-awakening:the-long-awakening",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:portland-vs-dallas",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:sweetie-candy-maze-crimson-strawberry:sweetie-candy-maze-crimson-strawberry",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:tears-of-metal:tears-of-metal",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:ai-and-you:ai-and-you",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:dragonsword-awakening:dragonsword-awakening",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:john-leguizamo",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:avatar-legends-the-fighting-game:avatar-legends-the-fighting-game",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:portland-timbers",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:halo-campaign-evolved",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:type-strike:type-strike",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:colman-domingo",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:joe-adventure:joe-adventure",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:umamusume-pretty-derby:umamusume-pretty-derby",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:joan-collins",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "steam-top-sellers:assassin-s-creed-black-flag-resynced:assassin-s-creed-black-flag-resynced",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:powerball-numbers",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:the-deepest-castle:the-deepest-castle",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:golf-superstore-simulator:golf-superstore-simulator",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:heath-ledger",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "steam-upcoming:coin-tavern:coin-tavern",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:diego-luna",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 70
+        }
+      ]
     }
   ]
 }
