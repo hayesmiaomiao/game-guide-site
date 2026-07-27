@@ -5197,6 +5197,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-07-27",
+      "generatedAt": "2026-07-27T05:59:45.346Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:medieval-tavern-simulator:medieval-tavern-simulator",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:water-drop-brick-breaker:water-drop-brick-breaker",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:app-developer-tycoon:app-developer-tycoon",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:the-political-simulator:the-political-simulator",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:utopia-birth-of-the-heroes:utopia-birth-of-the-heroes",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:i-m-just-a-wall:i-m-just-a-wall",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:infinite-ruins:infinite-ruins",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:halo-campaign-evolved:halo-campaign-evolved",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:kinny-and-the-cosmic-cauldron:kinny-and-the-cosmic-cauldron",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:cosdarica-s-journey-at-the-end-of-the-world:cosdarica-s-journey-at-the-end-of-the-world",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:the-left-behind:the-left-behind",
+          "score": 81
+        },
+        {
+          "id": "google-trends:gaming:rebecca-ferguson",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:shift-at-midnight:shift-at-midnight",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:the-great-ebony-clock:the-great-ebony-clock",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:assassin-s-creed-black-flag-resynced:assassin-s-creed-black-flag-resynced",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:deepcore-mining:deepcore-mining",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:frontier-airlines-news",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:spell-knight-abyss-cleaver:spell-knight-abyss-cleaver",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:xbox",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 77
+        },
+        {
+          "id": "steam-upcoming:dystopicon:dystopicon",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:the-mound-omen-of-cthulhu:the-mound-omen-of-cthulhu",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:vladimir-putin",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:battlefield-6:battlefield-6",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:furious-hulu",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:office-leveling:office-leveling",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:luis-chaparro",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:mnema-the-fallen-remembered:mnema-the-fallen-remembered",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "steam-top-sellers:dragonsword-awakening:dragonsword-awakening",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:rick-and-morty-season-9-episode-10",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:slime-jump:slime-jump",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:xbox-outage",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:ernesto-laguardia",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:metal-gear-solid-snake-eater:metal-gear-solid-snake-eater",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:skills-and-raids:skills-and-raids",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:icarus:icarus",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:noire-police-detective-gangster-drama-simulator:noire-police-detective-gangster-drama-simulator",
+          "score": 70
+        }
+      ]
     }
   ]
 }
