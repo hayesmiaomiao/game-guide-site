@@ -5815,6 +5815,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-07-30",
+      "generatedAt": "2026-07-30T05:17:34.297Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:wayfarer-colony-veylan:wayfarer-colony-veylan",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:bob-run:bob-run",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:forgotten-isle:forgotten-isle",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:laptop-architect:laptop-architect",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:exodium-part-1:exodium-part-1",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:hyperstacks:hyperstacks",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:chronoquest-vr:chronoquest-vr",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:mikane-s-hand:mikane-s-hand",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:mistfall-hunter:mistfall-hunter",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:halo-campaign-evolved:halo-campaign-evolved",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:noun-town-learn-and-chill:noun-town-learn-and-chill",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:dragon-ball-sparking-zero:dragon-ball-sparking-zero",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:surveillance-duty-twisted-sight:surveillance-duty-twisted-sight",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:diggy-diggy-mole:diggy-diggy-mole",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:luciano-darderi",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:zenless-zone-zero:zenless-zone-zero",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:elementis-td:elementis-td",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:shon-barnes",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:andruw-monasterio",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:luck-of-the-draw:luck-of-the-draw",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:lil-wayne",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:wuthering-waves:wuthering-waves",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:disney-dreamlight-valley:disney-dreamlight-valley",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:ludus-a-gladiator-story:ludus-a-gladiator-story",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:cyberpunk-2077:cyberpunk-2077",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:dodgers",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:senara-the-sacrament:senara-the-sacrament",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:asteranova:asteranova",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:astros",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:alianza-antigua-gfc",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:mimicry:mimicry",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:shift-at-midnight:shift-at-midnight",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:rita:rita",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:sadie-sink-spider-man",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:josh-naylor",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:truxton-extreme:truxton-extreme",
+          "score": 70
+        }
+      ]
     }
   ]
 }
