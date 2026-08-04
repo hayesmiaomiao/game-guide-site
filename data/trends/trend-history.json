@@ -6845,6 +6845,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-08-04",
+      "generatedAt": "2026-08-04T05:24:19.501Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:shadow-princess:shadow-princess",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:the-expansion:the-expansion",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:deadline:deadline",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:let-s-catch-the-variable:let-s-catch-the-variable",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:idlepunk-ghost-link:idlepunk-ghost-link",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:liquidation:liquidation",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:recessive:recessive",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:mistfall-hunter:mistfall-hunter",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:phantacall-realm:phantacall-realm",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:outono-adventures:outono-adventures",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:big-walk:big-walk",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:cyberpunk-2077:cyberpunk-2077",
+          "score": 81
+        },
+        {
+          "id": "google-trends:gaming:aaron-farinacci-spokane",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:marvel-s-spider-man-2:marvel-s-spider-man-2",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:quantum-breach:quantum-breach",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:beast-of-reincarnation:beast-of-reincarnation",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:hellslave-ii-judgment-of-the-archon:hellslave-ii-judgment-of-the-archon",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:mitch-mcconnell",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:adam-sandler",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:marvel-t-kon-fighting-souls:marvel-t-kon-fighting-souls",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:spinning-scarecrow:spinning-scarecrow",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:rihanna",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:dangerous-diver:dangerous-diver",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:the-amazing-spider-man",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:corectl:corectl",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:davante-adams",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:gears-of-war-e-day:gears-of-war-e-day",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:harry-truman",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:pier-pals:pier-pals",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:eshop-sale",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:loot-goblin:loot-goblin",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:marvel-s-spider-man-remastered:marvel-s-spider-man-remastered",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:it-consumes:it-consumes",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:jasson-dominguez",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:escape-from-tarkov:escape-from-tarkov",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "steam-upcoming:meet-me-in-the-well:meet-me-in-the-well",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:oregon-fires",
+          "score": 70
+        }
+      ]
     }
   ]
 }
