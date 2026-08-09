@@ -7875,6 +7875,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-08-09",
+      "generatedAt": "2026-08-09T03:52:11.985Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:100-mystic-cats:100-mystic-cats",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:playworlds:playworlds",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:samurai-beat-demons:samurai-beat-demons",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:paper2galgame:paper2galgame",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:the-money-pit:the-money-pit",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:ascend-exe:ascend-exe",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:big-walk:big-walk",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:kungfu-card:kungfu-card",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:the-wraith-train-illusory-domain:the-wraith-train-illusory-domain",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:twenty-one-points:twenty-one-points",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:hide-and-seek:hide-and-seek",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 81
+        },
+        {
+          "id": "google-trends:gaming:dodgers",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:marvel-t-kon-fighting-souls:marvel-t-kon-fighting-souls",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:the-three-kingdoms-of-shadows-xuzhou:the-three-kingdoms-of-shadows-xuzhou",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:charles-e-grassley",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:clan-and-crown:clan-and-crown",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:iron-nest-heavy-turret-simulator:iron-nest-heavy-turret-simulator",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:crown-jewels:crown-jewels",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:lafc",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:palworld:palworld",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:restory-chill-electronics-repairs:restory-chill-electronics-repairs",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:snl-tonight",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:drake",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:gears-of-war-e-day:gears-of-war-e-day",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:tasmon-taskbar-monsters:tasmon-taskbar-monsters",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:bit-breaker:bit-breaker",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:lets-marry-harry",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:tom-clancy-s-ghost-recon-wildlands:tom-clancy-s-ghost-recon-wildlands",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:ajnabee-the-unknown:ajnabee-the-unknown",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:cherneka-johnson",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:r-e-p-o:r-e-p-o",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:edwin-diaz",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:the-black-lily-blooms-in-her-eyes:the-black-lily-blooms-in-her-eyes",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:a-game-about-penguins:a-game-about-penguins",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:cyberpunk-2077:cyberpunk-2077",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:kick",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:doom-the-dark-ages:doom-the-dark-ages",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:geometry-dash:geometry-dash",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:chelsea-green",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:mistfall-hunter:mistfall-hunter",
+          "score": 70
+        }
+      ]
     }
   ]
 }
