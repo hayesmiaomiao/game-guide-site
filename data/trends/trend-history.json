@@ -8493,6 +8493,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-08-12",
+      "generatedAt": "2026-08-12T04:16:43.401Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:my-tsundere-sister:my-tsundere-sister",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:rogue-drone:rogue-drone",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:da-bomb:da-bomb",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:survival-log:survival-log",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:wacky-deer-and-munk-adventure:wacky-deer-and-munk-adventure",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:tough-cat:tough-cat",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:limbot:limbot",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:overwatch:overwatch",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:sky-scramble:sky-scramble",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:big-walk:big-walk",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:patisserie-simulator:patisserie-simulator",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:quantum-hell:quantum-hell",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 81
+        },
+        {
+          "id": "google-trends:gaming:7-brew-app",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:palm-sugar-a-village-story:palm-sugar-a-village-story",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:the-lord-of-the-rings-war-in-the-north-legacy-edition:the-lord-of-the-rings-war-in-the-north-legacy-edition",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:north-korea",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:the-merchant-s-eden:the-merchant-s-eden",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:carson-williams",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:security-51:security-51",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:hell-let-loose-vietnam:hell-let-loose-vietnam",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:ilhan-omar",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-upcoming:dorts-a-darts-roguelike:dorts-a-darts-roguelike",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:elle-fanning",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:marvel-t-kon-fighting-souls:marvel-t-kon-fighting-souls",
+          "score": 76
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:black-myth-wukong:black-myth-wukong",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:shakira-austin",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:teddy-s-horde:teddy-s-horde",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:absolute-tofu:absolute-tofu",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:lauren-betts",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:burnstation:burnstation",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:airport-manager-simulator-2026:airport-manager-simulator-2026",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:alyssa-thomas",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:magic-the-gathering-arena:magic-the-gathering-arena",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:ea-sports-fc-26:ea-sports-fc-26",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:iron-nest-heavy-turret-simulator:iron-nest-heavy-turret-simulator",
+          "score": 71
+        },
+        {
+          "id": "steam-upcoming:boil-cabbage-make-soup:boil-cabbage-make-soup",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:jurassic-world-evolution-3:jurassic-world-evolution-3",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:rangers",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:renz-village-adventure:renz-village-adventure",
+          "score": 69
+        }
+      ]
     }
   ]
 }
