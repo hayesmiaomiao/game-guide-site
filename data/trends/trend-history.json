@@ -8905,6 +8905,212 @@
           "score": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-14",
+      "generatedAt": "2026-08-14T04:17:37.457Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:temp:temp",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:tickwords:tickwords",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:a-sea-of-grey-and-green:a-sea-of-grey-and-green",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:midnight-gas-station:midnight-gas-station",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:fluff-n-roll:fluff-n-roll",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:chinese-street-food-legend:chinese-street-food-legend",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:hatching-of-gods-and-demons:hatching-of-gods-and-demons",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:fantasy-shop:fantasy-shop",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:hell-let-loose-vietnam:hell-let-loose-vietnam",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:blue-sign:blue-sign",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:no-results-found:no-results-found",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:big-walk:big-walk",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:sura-shattered-star:sura-shattered-star",
+          "score": 80
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:ea-sports-madden-nfl-27:ea-sports-madden-nfl-27",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:james-franco",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:ranarangam-where-chess-pieces-bleed:ranarangam-where-chess-pieces-bleed",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:kingdom-hearts-hd-1-5-2-5-remix:kingdom-hearts-hd-1-5-2-5-remix",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:scott-bessent",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:tidy-up-together:tidy-up-together",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:hootie-frutti-katseye",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:max-muncy",
+          "score": 76
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:total-war-warhammer-iii:total-war-warhammer-iii",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:valentine-in-bitterness:valentine-in-bitterness",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:dave-franco",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:i-t-never-ends:i-t-never-ends",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:lost-weekend-phoebe-bridgers",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:no-more-room-in-hell-2:no-more-room-in-hell-2",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:adam-scott",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:kabuki-fire-dojo:kabuki-fire-dojo",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:fd-27-direct-your-football-club:fd-27-direct-your-football-club",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:hendon-hooker",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:overwatch:overwatch",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:peak:peak",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:brock-purdy",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:the-lord-of-the-rings-war-in-the-north-legacy-edition:the-lord-of-the-rings-war-in-the-north-legacy-edition",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:zankoi-s-chronicles:zankoi-s-chronicles",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:eugene-horsch",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:halftime-manager:halftime-manager",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:mind-against-fate:mind-against-fate",
+          "score": 69
+        }
+      ]
     }
   ]
 }
