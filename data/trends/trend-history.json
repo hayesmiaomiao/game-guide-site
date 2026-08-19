@@ -9935,6 +9935,212 @@
           "score": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-19",
+      "generatedAt": "2026-08-19T03:10:20.611Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:incident-archives-flight-882:incident-archives-flight-882",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:ministry-of-truth-false-memory:ministry-of-truth-false-memory",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:pizza-house-simulator:pizza-house-simulator",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:linerunner:linerunner",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:dreamcards:dreamcards",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:cannon-clicker:cannon-clicker",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:vivere-retro:vivere-retro",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:blue-guy-must-die:blue-guy-must-die",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:mortal-shell-ii:mortal-shell-ii",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:kingdom-hearts-hd-1-5-2-5-remix:kingdom-hearts-hd-1-5-2-5-remix",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:money-trails:money-trails",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:elemental-forge:elemental-forge",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:no-more-room-in-hell-2:no-more-room-in-hell-2",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:t-w-i-r-l:t-w-i-r-l",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:wisconsin-tornado-warnings",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:big-walk:big-walk",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:blood-in-the-panopticon:blood-in-the-panopticon",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:natasha-cloud",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:bouzkova",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:deadlock-station:deadlock-station",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:daycare",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:hell-let-loose-vietnam:hell-let-loose-vietnam",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:kc-royals",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:peaceful-bug-catching-story:peaceful-bug-catching-story",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:brandon-dukes",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:call-of-duty-modern-warfare-4:call-of-duty-modern-warfare-4",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:my-singing-monsters-karaoke:my-singing-monsters-karaoke",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:the-hidden-camp:the-hidden-camp",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:toyota-recalls",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:aluminium-city:aluminium-city",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:lincoln-memorial-reflecting-pool",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:peak:peak",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:esordie:esordie",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:wuthering-waves:wuthering-waves",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:bryce-miller",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:wild-ice:wild-ice",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:overwatch:overwatch",
+          "score": 69
+        },
+        {
+          "id": "steam-upcoming:project-p-i-t-t:project-p-i-t-t",
+          "score": 69
+        }
+      ]
     }
   ]
 }
