@@ -10141,6 +10141,212 @@
           "score": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-20",
+      "generatedAt": "2026-08-20T03:09:17.641Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:roll-to-ruin:roll-to-ruin",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:cosmos-vr:cosmos-vr",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:the-walks-we-used-to-take:the-walks-we-used-to-take",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:ghost-buster-village:ghost-buster-village",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:deckalypse:deckalypse",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:backyard-paintball:backyard-paintball",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:pengpong:pengpong",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:grim-trials:grim-trials",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:mortal-shell-ii:mortal-shell-ii",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:command-omega-2:command-omega-2",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:kingdom-hearts-hd-1-5-2-5-remix:kingdom-hearts-hd-1-5-2-5-remix",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:call-of-duty-modern-warfare-4:call-of-duty-modern-warfare-4",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:can-your-otaku-cabinet-grow-a-beautiful-girl:can-your-otaku-cabinet-grow-a-beautiful-girl",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:maze-of-doors:maze-of-doors",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:no-more-room-in-hell-2:no-more-room-in-hell-2",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:olivia-miles",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:astro-beasts:astro-beasts",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:tiffany-hayes",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:fairysite:fairysite",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:napheesa-collier",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:gabby-williams",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:big-walk:big-walk",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:gj-523b-mega-earth-exoplanet",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:planet-fatta:planet-fatta",
+          "score": 76
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:sage-steele",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:trapzone:trapzone",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:mn-lynx",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:nova-fleet:nova-fleet",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:dane-cook",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:file-tower-defence:file-tower-defence",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:wuthering-waves:wuthering-waves",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:aryna-sabalenka",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:rythix-2048:rythix-2048",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:zenless-zone-zero:zenless-zone-zero",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:hell-let-loose-vietnam:hell-let-loose-vietnam",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:peak:peak",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:courtney-williams",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:snake-extended:snake-extended",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:ground-zero-hero:ground-zero-hero",
+          "score": 69
+        }
+      ]
     }
   ]
 }
