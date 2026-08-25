@@ -11171,6 +11171,212 @@
           "score": 68
         }
       ]
+    },
+    {
+      "date": "2026-08-25",
+      "generatedAt": "2026-08-25T03:11:53.181Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:bohem:bohem",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:open-up-michael:open-up-michael",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:tsugunohi-the-thread-that-beckons-to-heaven:tsugunohi-the-thread-that-beckons-to-heaven",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:hero-mania:hero-mania",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:how-asian-parents-went-to-school:how-asian-parents-went-to-school",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:blob-of-ink:blob-of-ink",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:how-to-fish:how-to-fish",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:snap-the-cat:snap-the-cat",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:koikata-how-our-love-grows:koikata-how-our-love-grows",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:sokogram:sokogram",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:astral-court-dx:astral-court-dx",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:no-more-room-in-hell-2:no-more-room-in-hell-2",
+          "score": 81
+        },
+        {
+          "id": "google-trends:gaming:cal-raleigh",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:mochi:mochi",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:mortal-shell-ii:mortal-shell-ii",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:call-of-duty-modern-warfare-4:call-of-duty-modern-warfare-4",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:idle-times:idle-times",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:padres-game",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:hide-and-moo:hide-and-moo",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:kat-timpf",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:emma-coronel",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:lawn-order:lawn-order",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:shay-whitcomb",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:big-walk:big-walk",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:bulletarium:bulletarium",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:cat-in-the-hat",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:carson-whisenhunt",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:first-move-classic-games-collection:first-move-classic-games-collection",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:bard-s-fault:bard-s-fault",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:owen-wilson",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:core-crusher:core-crusher",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:mike-lindell-withheld-recount-payment",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:warframe:warframe",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:once-human:once-human",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:buc-ee-s",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:holey-ship:holey-ship",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:nba-2k27:nba-2k27",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:hell-let-loose-vietnam:hell-let-loose-vietnam",
+          "score": 69
+        }
+      ]
     }
   ]
 }
