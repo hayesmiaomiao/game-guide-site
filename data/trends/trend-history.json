@@ -11995,6 +11995,212 @@
           "score": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-29",
+      "generatedAt": "2026-08-29T09:00:56.050Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:resonance:resonance",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:neon-cruisers:neon-cruisers",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:grey-cloaks-of-aron-the-sleeping-village:grey-cloaks-of-aron-the-sleeping-village",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:just-open-the-door:just-open-the-door",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:don-t-drop-the-cake:don-t-drop-the-cake",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:black-stack:black-stack",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:level-p:level-p",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:meow-with-pipeline:meow-with-pipeline",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:desktopdrifter-exe:desktopdrifter-exe",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:how-to-fish:how-to-fish",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:nba-2k27:nba-2k27",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:prison-cook-simulator:prison-cook-simulator",
+          "score": 81
+        },
+        {
+          "id": "google-trends:gaming:demi-lovato",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:my-fire-is-bigger-than-yours:my-fire-is-bigger-than-yours",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:accident-attorney",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:dungeons-and-animals:dungeons-and-animals",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:agent-ai",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:deadline-savior:deadline-savior",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:mandm-mint",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-upcoming:nebulon:nebulon",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:themotleyfool",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:bodycam:bodycam",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:car-accident-lawyer",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:pitchside-empire:pitchside-empire",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:childhood-slots:childhood-slots",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:draftkings-vs-fanduel",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 74
+        },
+        {
+          "id": "steam-top-sellers:crimson-desert-enhanced:crimson-desert-enhanced",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:draft-kings",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:nellie-s-nonograms:nellie-s-nonograms",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:betmgm-sportsbook",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:no-more-room-in-hell-2:no-more-room-in-hell-2",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:tarot-gambit:tarot-gambit",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:dead-by-daylight:dead-by-daylight",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:call-of-duty-modern-warfare-4:call-of-duty-modern-warfare-4",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:draftkings-fantasy",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:stillflow:stillflow",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:mortal-shell-ii:mortal-shell-ii",
+          "score": 69
+        }
+      ]
     }
   ]
 }
