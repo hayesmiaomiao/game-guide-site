@@ -12407,6 +12407,212 @@
           "score": 69
         }
       ]
+    },
+    {
+      "date": "2026-08-31",
+      "generatedAt": "2026-08-31T08:37:36.364Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:beatchip-95:beatchip-95",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:trap-lab:trap-lab",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:asteroid-destroyer:asteroid-destroyer",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:last-light-survival:last-light-survival",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:until-north-ends:until-north-ends",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:deliria:deliria",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:math-havoc:math-havoc",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:an-unknown-land:an-unknown-land",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:how-to-fish:how-to-fish",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:unwanted-experiment:unwanted-experiment",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:nba-2k27:nba-2k27",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:nowhere-house:nowhere-house",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:bodycam:bodycam",
+          "score": 80
+        },
+        {
+          "id": "steam-upcoming:ghost-case:ghost-case",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:kids-soccer",
+          "score": 80
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:haunted-laia:haunted-laia",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:warehouse",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:another-shadow:another-shadow",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:swimming-competition",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:swimming-facility",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:escape-from-the-shadows:escape-from-the-shadows",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:housing-development",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:barack-obama",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:beyond-the-room:beyond-the-room",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:the-blood-of-dawnwalker:the-blood-of-dawnwalker",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:hidden-memories:hidden-memories",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:market",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:no-more-room-in-hell-2:no-more-room-in-hell-2",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:psychiatrist",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:the-girl-in-the-window:the-girl-in-the-window",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:car-insurance",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:overprint:overprint",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:crimson-desert-enhanced:crimson-desert-enhanced",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:big-walk:big-walk",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:las-vegas-weather",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:minimon-tiny-idle-tactics:minimon-tiny-idle-tactics",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:grand-theft-auto-v-enhanced:grand-theft-auto-v-enhanced",
+          "score": 69
+        }
+      ]
     }
   ]
 }
