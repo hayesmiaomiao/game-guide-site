@@ -12613,6 +12613,212 @@
           "score": 69
         }
       ]
+    },
+    {
+      "date": "2026-09-01",
+      "generatedAt": "2026-09-01T07:48:05.668Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:phantom-protocol:phantom-protocol",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:crime-scene-clean-paranormal:crime-scene-clean-paranormal",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:fireboy-and-watergirl-2-the-light-temple:fireboy-and-watergirl-2-the-light-temple",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:fireboy-and-watergirl-3-the-ice-temple:fireboy-and-watergirl-3-the-ice-temple",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:fireboy-and-watergirl-4-the-crystal-temple:fireboy-and-watergirl-4-the-crystal-temple",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:nom-n-ipsa:nom-n-ipsa",
+          "score": 85
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:fireboy-and-watergirl-1-the-forest-temple:fireboy-and-watergirl-1-the-forest-temple",
+          "score": 84
+        },
+        {
+          "id": "steam-upcoming:plushy-store-tidy-up:plushy-store-tidy-up",
+          "score": 83
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:service-equals-survival:service-equals-survival",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:the-blood-of-dawnwalker:the-blood-of-dawnwalker",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:bounty-trail:bounty-trail",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:how-to-fish:how-to-fish",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:101-dogs-hidden-in-antalya:101-dogs-hidden-in-antalya",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:nba-2k27:nba-2k27",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:twilight",
+          "score": 80
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:nicki-minaj",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:sussy-babies-reborn:sussy-babies-reborn",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:bodycam:bodycam",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:cognition-method:cognition-method",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:iphone-ultra",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:onimusha-way-of-the-sword:onimusha-way-of-the-sword",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:san-francisco",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:apex-legends:apex-legends",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:deck-and-conn:deck-and-conn",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:qatar-airways",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:lil-durk",
+          "score": 75
+        },
+        {
+          "id": "steam-upcoming:shardwatch-dominion:shardwatch-dominion",
+          "score": 75
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:playstation-class-action-lawsuit",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:safe-place:safe-place",
+          "score": 74
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:palworld:palworld",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:the-abjuration-stand:the-abjuration-stand",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:xolo-maridue-a",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:farming-and-defense-farmfence:farming-and-defense-farmfence",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:halloween-the-game:halloween-the-game",
+          "score": 72
+        },
+        {
+          "id": "google-trends:gaming:sce",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:project-zomboid:project-zomboid",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 71
+        },
+        {
+          "id": "steam-top-sellers:tom-clancy-s-rainbow-six-siege:tom-clancy-s-rainbow-six-siege",
+          "score": 70
+        },
+        {
+          "id": "google-trends:gaming:tyler-perry",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:zad-archery:zad-archery",
+          "score": 70
+        }
+      ]
     }
   ]
 }
