@@ -12819,6 +12819,212 @@
           "score": 70
         }
       ]
+    },
+    {
+      "date": "2026-09-02",
+      "generatedAt": "2026-09-02T07:05:10.892Z",
+      "opportunities": [
+        {
+          "id": "steam-upcoming:divider-dave:divider-dave",
+          "score": 91
+        },
+        {
+          "id": "steam-upcoming:hades-hinderance:hades-hinderance",
+          "score": 90
+        },
+        {
+          "id": "steam-upcoming:the-woods:the-woods",
+          "score": 89
+        },
+        {
+          "id": "steam-upcoming:top-check-a-chess-card-game:top-check-a-chess-card-game",
+          "score": 88
+        },
+        {
+          "id": "steam-upcoming:staged:staged",
+          "score": 87
+        },
+        {
+          "id": "steam-upcoming:overtime-patrol:overtime-patrol",
+          "score": 85
+        },
+        {
+          "id": "steam-upcoming:lights-of-dunhuang:lights-of-dunhuang",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:the-blood-of-dawnwalker:the-blood-of-dawnwalker",
+          "score": 84
+        },
+        {
+          "id": "steam-top-sellers:counter-strike-2:counter-strike-2",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:meat-lovers:meat-lovers",
+          "score": 83
+        },
+        {
+          "id": "steam-upcoming:bombanana:bombanana",
+          "score": 82
+        },
+        {
+          "id": "steam-top-sellers:tom-clancy-s-rainbow-six-siege:tom-clancy-s-rainbow-six-siege",
+          "score": 82
+        },
+        {
+          "id": "steam-upcoming:squareslicer:squareslicer",
+          "score": 81
+        },
+        {
+          "id": "steam-top-sellers:wardogs:wardogs",
+          "score": 81
+        },
+        {
+          "id": "steam-upcoming:shipshaper-falconeer-chronicles:shipshaper-falconeer-chronicles",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:star-wars-zero-company:star-wars-zero-company",
+          "score": 80
+        },
+        {
+          "id": "google-trends:gaming:translate",
+          "score": 80
+        },
+        {
+          "id": "steam-top-sellers:apex-legends:apex-legends",
+          "score": 79
+        },
+        {
+          "id": "steam-most-played:dota-2:dota-2",
+          "score": 79
+        },
+        {
+          "id": "steam-upcoming:mergecaster:mergecaster",
+          "score": 79
+        },
+        {
+          "id": "google-trends:gaming:severe-thunderstorm-warning",
+          "score": 79
+        },
+        {
+          "id": "steam-top-sellers:crimson-moon:crimson-moon",
+          "score": 78
+        },
+        {
+          "id": "steam-upcoming:deep-core-protocol:deep-core-protocol",
+          "score": 78
+        },
+        {
+          "id": "google-trends:gaming:person-of-interest",
+          "score": 78
+        },
+        {
+          "id": "steam-most-played:pubg-battlegrounds:pubg-battlegrounds",
+          "score": 78
+        },
+        {
+          "id": "steam-top-sellers:how-to-fish:how-to-fish",
+          "score": 77
+        },
+        {
+          "id": "google-trends:gaming:kttc-weather",
+          "score": 77
+        },
+        {
+          "id": "steam-most-played:wallpaper-engine:wallpaper-engine",
+          "score": 77
+        },
+        {
+          "id": "steam-upcoming:electronics-depot-simulator:electronics-depot-simulator",
+          "score": 76
+        },
+        {
+          "id": "steam-top-sellers:halloween-the-game:halloween-the-game",
+          "score": 76
+        },
+        {
+          "id": "google-trends:gaming:mortgage",
+          "score": 76
+        },
+        {
+          "id": "steam-upcoming:lost-sanity-cthulhu:lost-sanity-cthulhu",
+          "score": 75
+        },
+        {
+          "id": "steam-top-sellers:nba-2k27:nba-2k27",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:seatgeek",
+          "score": 75
+        },
+        {
+          "id": "google-trends:gaming:aldo-rendon",
+          "score": 74
+        },
+        {
+          "id": "steam-most-played:grand-theft-auto-v-legacy:grand-theft-auto-v-legacy",
+          "score": 74
+        },
+        {
+          "id": "steam-upcoming:grimoire-garden-a-taskbar-tale:grimoire-garden-a-taskbar-tale",
+          "score": 74
+        },
+        {
+          "id": "google-trends:gaming:best-tv-deals",
+          "score": 73
+        },
+        {
+          "id": "steam-top-sellers:bodycam:bodycam",
+          "score": 73
+        },
+        {
+          "id": "steam-upcoming:decorate-hololive-sticker-battle:decorate-hololive-sticker-battle",
+          "score": 73
+        },
+        {
+          "id": "steam-most-played:slay-the-spire-2:slay-the-spire-2",
+          "score": 73
+        },
+        {
+          "id": "google-trends:gaming:brayden-burries",
+          "score": 72
+        },
+        {
+          "id": "steam-most-played:fivem:fivem",
+          "score": 72
+        },
+        {
+          "id": "steam-upcoming:he-who-watches:he-who-watches",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:onimusha-way-of-the-sword:onimusha-way-of-the-sword",
+          "score": 72
+        },
+        {
+          "id": "steam-top-sellers:marvel-rivals:marvel-rivals",
+          "score": 71
+        },
+        {
+          "id": "steam-most-played:the-binding-of-isaac-rebirth:the-binding-of-isaac-rebirth",
+          "score": 71
+        },
+        {
+          "id": "google-trends:gaming:best-tv-prices",
+          "score": 70
+        },
+        {
+          "id": "steam-upcoming:category-6:category-6",
+          "score": 70
+        },
+        {
+          "id": "steam-top-sellers:helldivers-2:helldivers-2",
+          "score": 70
+        }
+      ]
     }
   ]
 }
